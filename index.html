@@ -1,0 +1,1626 @@
+<!DOCTYPE html>
+<html lang="pt">
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+
+<!-- ======================================================
+                        BASE
+====================================================== -->
+
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+<title> Mentor Company | Tecnologia & Soluções Digitais</title>
+
+<meta name="description" content="Empresa de tecnologia especializada em desenvolvimento de soluções tecnológicas, soluções digitais, consultoria IT, marketing e inovação empresarial.">
+<meta name="keywords" content="tecnologia, desenvolvimento web, software, marketing digital, soluções empresariais, Angola, IT, consultoria">
+<meta name="author" content="MENTOR - PRESTAÇÃO DE SERVIÇOS, LDA">
+
+<meta name="robots" content="index, follow">
+<meta name="theme-color" content="#0F172A">
+
+<link rel="canonical" href="https://www.seudominio.com">
+
+<!-- ======================================================
+                        FAVICON
+====================================================== -->
+
+
+<link rel="icon" type="image/png" href="assets/logo/apple-touch-icon.png">
+<link rel="apple-touch-icon" href="assets/logo/apple-touch-icon.png">
+
+<!-- ======================================================
+                        FONTS + ICONS
+====================================================== -->
+
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+<script src="https://unpkg.com/lucide@latest"></script>
+
+<!-- ======================================================
+                        CSS
+====================================================== -->
+
+
+<link rel="stylesheet" href="style.css">
+
+
+
+</head>
+<body>
+    
+
+<!-- ======================================================
+                        HEADER
+====================================================== -->
+<header class="site-header" id="header">
+
+    <div class="header-container">
+
+        <!-- LOGO -->
+        <div class="header-logo">
+            <a href="#hero">
+                <img class="logo-light" src="assets/logo/logo-color.png.png" alt="Mentor Company">
+                <img class="logo-dark" src="assets/logo/logo-white.png.png" alt="Mentor Company">
+            </a>
+        </div>
+
+        <!-- NAVEGAÇÃO PRINCIPAL -->
+        <nav class="main-navigation" aria-label="Navegação principal">
+
+            <ul class="nav-list">
+
+                <li class="nav-item">
+                    <a href="#hero" class="nav-link active">Home</a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="#about" class="nav-link">Sobre</a>
+                </li>
+
+                <!-- MEGA MENU -->
+                <li class="nav-item dropdown">
+
+                    <a href="#services" class="nav-link dropdown-toggle" aria-haspopup="true">
+                        Soluções
+                        <span class="dropdown-icon">⌄</span>
+                    </a>
+
+                    <div class="mega-menu">
+                        <div class="mega-content">
+
+                            <!-- COLUNA ESQUERDA -->
+                            <div class="mega-introduction">
+                                <h2>Tecnologia para <strong>transformar negócios.</strong></h2>
+                                <p>Desenvolvemos soluções digitais, infraestrutura tecnológica e inovação para empresas que procuram crescer.</p>
+                                <a href="#contact" class="mega-button">Falar com especialista →</a>
+                            </div>
+
+                            <!-- COLUNA DIREITA -->
+                            <div class="mega-services">
+                                <a href="#"><span>01</span>Consultoria Tecnológica</a>
+                                <a href="#"><span>02</span>Desenvolvimento Web</a>
+                                <a href="#"><span>03</span>Cibersegurança</a>
+                                <a href="#"><span>04</span>Redes e Infraestrutura</a>
+                                <a href="#"><span>05</span>Cloud Computing</a>
+                                <a href="#"><span>06</span>Automação Empresarial</a>
+                                <a href="#"><span>07</span>Inteligência Artificial</a>
+                                <a href="#"><span>08</span>RFID e Gestão de Inventário</a>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </li>
+
+                <li class="nav-item">
+                    <a href="#projects" class="nav-link">Projetos</a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="#blog" class="nav-link">Blog</a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="#contact" class="nav-link">Contacto</a>
+                </li>
+
+            </ul>
+
+        </nav>
+
+        <!-- BOTÃO DE AÇÃO + IDIOMA -->
+        <div class="header-actions">
+
+            <div class="lang-switch" id="langSwitch">
+
+                <button type="button" class="lang-current" aria-haspopup="true" aria-label="Selecionar idioma">
+                    <i data-lucide="globe"></i>
+                    <span class="lang-active">PT</span>
+                    <i data-lucide="chevron-down" class="lang-caret"></i>
+                </button>
+
+                <div class="lang-dropdown">
+                    <span class="lang" data-lang="PT"><span class="lang-flag">🇵🇹</span> Português</span>
+                    <span class="lang" data-lang="EN"><span class="lang-flag">🇬🇧</span> English</span>
+                </div>
+
+            </div>
+
+            <a href="#contact" class="header-button">Fale Connosco</a>
+
+        </div>
+
+        <!-- MENU MOBILE -->
+        <button class="mobile-toggle" aria-label="Abrir menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+
+    </div>
+
+</header>
+
+<!-- ======================================================
+                        HERO
+====================================================== -->
+
+<section id="hero" class="hero">
+
+    <!-- PARTICLES -->
+    <canvas id="hero-particles"></canvas>
+
+    <!-- EFFECT LAYERS -->
+    <div class="hero-bg-effects">
+        <div class="grid-overlay"></div>
+        <div class="glow-orb orb-1"></div>
+        <div class="glow-orb orb-2"></div>
+        <div class="noise-overlay"></div>
+    </div>
+
+    <!-- SLIDER (IMPORTANTE: dentro do hero) -->
+    <div class="hero-slider-track">
+
+        <div class="slide active">
+            <img src="assets/images/Gemini_Generated_Image_9atey89atey89ate.png " alt="">
+            <div class="overlay"></div>
+
+            <div class="content">
+                <span class="tag">DIGITAL • INNOVATION • AI</span>
+                <h1>Transformamos ideias em soluções digitais</h1>
+                <p>Tecnologia, inovação e performance para empresas modernas.</p>
+                <a href="#services" class="btn-primary">Explorar Serviços</a>
+            </div>
+        </div>
+
+        <div class="slide">
+            <img src="assets/images/Gemini_Generated_Image_jtfz0wjtfz0wjtfz.png" alt="">
+            <div class="overlay"></div>
+
+            <div class="content">
+                <span class="tag">AUTOMATION • DATA • AI</span>
+                <h1>Automação e Inteligência Empresarial</h1>
+                <p>Soluções inteligentes para otimizar processos e resultados.</p>
+                <a href="#products" class="btn-primary">Ver Soluções</a>
+            </div>
+        </div>
+
+        <div class="slide">
+            <img src="assets/images/Gemini_Generated_Image_td09rltd09rltd09.png" alt="">
+            <div class="overlay"></div>
+
+            <div class="content">
+                <span class="tag">WEB • SYSTEMS • GROWTH</span>
+                <h1>Inovação que gera crescimento real</h1>
+                <p>Desenvolvimento web, marketing e sistemas empresariais.</p>
+                <a href="#contact" class="btn-primary">Falar Connosco</a>
+            </div>
+        </div>
+
+    </div>
+
+        <!-- DOTS -->
+            <div class="slider-nav">
+            <span class="nav-dot active" data-index="0"></span>
+            <span class="nav-dot" data-index="1"></span>
+            <span class="nav-dot" data-index="2"></span>
+        </div>
+
+</section>
+
+    
+
+</section>
+
+   <!-- ======================================================
+                    ÁREAS DE ATUAÇÃO
+====================================================== -->
+
+<section id="areas" class="areas">
+
+    <div class="areas-header container">
+
+        <span class="subtitle">
+            SOLUÇÕES
+        </span>
+
+        <h2>
+            Áreas de atuação
+        </h2>
+
+        <p>
+            Tecnologia, inovação e consultoria para acelerar empresas,
+            modernizar processos e impulsionar resultados.
+        </p>
+
+    </div>
+
+    <!-- CAROUSEL -->
+
+    <div class="carousel">
+
+        <!-- seta esquerda -->
+
+        <button class="carousel-btn prev">
+
+            <i data-lucide="arrow-left"></i>
+
+        </button>
+
+        <!-- TRACK -->
+
+        <div class="carousel-track">
+
+            <!-- CARD -->
+
+            <article class="area-card">
+
+                <div class="card-icon">
+
+                    <i data-lucide="briefcase-business"></i>
+
+                </div>
+
+                <span class="card-category">
+                    CONSULTORIA
+                </span>
+
+                <h3>
+                    Consultoria Organizacional
+                </h3>
+
+                <p>
+
+                    Diagnóstico empresarial,
+                    transformação digital,
+                    otimização de processos,
+                    gestão tecnológica
+                    e apoio estratégico.
+
+                </p>
+
+                <a href="#">
+
+                    Saber mais
+
+                    <i data-lucide="arrow-right"></i>
+
+                </a>
+
+            </article>
+
+            <!-- CARD -->
+
+
+            <article class="area-card">
+
+                <div class="card-icon">
+
+                    <i data-lucide="megaphone"></i>
+
+                </div>
+
+                <span class="card-category">
+                    MARKETING
+                </span>
+
+                <h3>
+
+                    Marketing Digital
+
+                </h3>
+
+                <p>
+
+                    Estratégia de conteúdo,
+                    gestão de redes sociais,
+                    branding,
+                    campanhas digitais,
+                    SEO e performance.
+
+                </p>
+
+                <a href="#">
+
+                    Saber mais
+
+                    <i data-lucide="arrow-right"></i>
+
+                </a>
+
+            </article>
+
+
+<!-- CARD -->
+
+            <article class="area-card">
+
+                <div class="card-icon">
+
+                    <i data-lucide="lightbulb"></i>
+
+                </div>
+
+                <span class="card-category">
+                    IOT
+                </span>
+
+                <h3>
+
+                    Automação e Casas Inteligentes
+
+                </h3>
+
+                <p>
+
+                    Controlo inteligente de iluminação,
+                    tomadas,
+                    sensores de presença,
+                    som ambiente
+                    e integração de dispositivos IoT.
+
+                </p>
+
+                <a href="#">
+
+                    Saber mais
+
+                    <i data-lucide="arrow-right"></i>
+
+                </a>
+
+            </article>
+
+            <!-- CARD -->
+
+            <article class="area-card">
+
+                <div class="card-icon">
+
+                    <i data-lucide="package-search"></i>
+
+                </div>
+
+                <span class="card-category">
+                    INVENTÁRIO
+                </span>
+
+                <h3>
+
+                    Gestão de Inventários
+
+                </h3>
+
+                <p>
+
+                    Contagem,
+                    inventariação,
+                    organização
+                    e gestão completa de stock,
+                    com execução de estratégias de inventário.
+
+                </p>
+
+                <a href="#">
+
+                    Saber mais
+
+                    <i data-lucide="arrow-right"></i>
+
+                </a>
+
+            </article>
+
+
+            <!-- CARD -->
+
+            <article class="area-card">
+
+                <div class="card-icon">
+
+                    <i data-lucide="globe"></i>
+
+                </div>
+
+                <span class="card-category">
+
+                    WEB
+
+                </span>
+
+                <h3>
+
+                    Desenvolvimento Web
+
+                </h3>
+
+                <p>
+
+                    Websites corporativos,
+                    plataformas empresariais,
+                    portais,
+                    sistemas internos
+                    e soluções cloud.
+
+                </p>
+
+                <a href="#">
+
+                    Saber mais
+
+                    <i data-lucide="arrow-right"></i>
+
+                </a>
+
+            </article>
+
+            <!-- CARD -->
+
+            <article class="area-card">
+
+                <div class="card-icon">
+
+                    <i data-lucide="cpu"></i>
+
+                </div>
+
+                <span class="card-category">
+
+                    IA
+
+                </span>
+
+                <h3>
+
+                    Inteligência Artificial
+
+                </h3>
+
+                <p>
+
+                    Automatização,
+                    Machine Learning,
+                    Chatbots,
+                    análise de dados
+                    e integração com IA.
+
+                </p>
+
+                <a href="#">
+
+                    Saber mais
+
+                    <i data-lucide="arrow-right"></i>
+
+                </a>
+
+            </article>
+
+            <!-- CARD -->
+
+            <article class="area-card">
+
+                <div class="card-icon">
+
+                    <i data-lucide="network"></i>
+
+                </div>
+
+                <span class="card-category">
+
+                    INFRAESTRUTURA
+
+                </span>
+
+                <h3>
+
+                    Redes & Sistemas
+
+                </h3>
+
+                <p>
+
+                    Configuração de Redes,
+                    servidores,
+                    virtualização,
+                    cloud,
+                    Microsoft 365
+                    e suporte empresarial.
+
+                </p>
+
+                <a href="#">
+
+                    Saber mais
+
+                    <i data-lucide="arrow-right"></i>
+
+                </a>
+
+            </article>
+
+            <!-- CARD -->
+
+            <article class="area-card">
+
+                <div class="card-icon">
+
+                    <i data-lucide="heart-pulse"></i>
+
+                </div>
+
+                <span class="card-category">
+
+                    HEALTH
+
+                </span>
+
+                <h3>
+
+                    Saúde Digital
+
+                </h3>
+
+                <p>
+
+                    Soluções para hospitais,
+                    clínicas,
+                    RFID,
+                    NFC,
+                    gestão inteligente
+                    e inovação tecnológica.
+
+                </p>
+
+                <a href="#">
+
+                    Saber mais
+
+                    <i data-lucide="arrow-right"></i>
+
+                </a>
+
+            </article>
+
+        </div>
+
+        <!-- seta direita -->
+
+        <button class="carousel-btn next">
+
+            <i data-lucide="arrow-right"></i>
+
+        </button>
+
+    </div>
+
+</section>
+
+   <!-- ======================================================
+                IMPACTO / ESTATÍSTICAS
+====================================================== -->
+
+<section id="impact" class="impact">
+
+    <div class="container impact-grid">
+
+        <!-- TEXTO -->
+
+        <div class="impact-content">
+
+            <span class="subtitle">
+                JUNTOS PARA O OBJETIVO
+            </span>
+
+            <h2>
+               A construir a próxima geração de empresas angolanas.
+            </h2>
+
+            <p>
+
+                Continuamos a crescer, a inovar e a desenvolver soluções
+                tecnológicas que geram impacto para empresas e instituições
+                em Angola.
+
+            </p>
+
+        </div>
+
+        <!-- NÚMEROS -->
+
+        <div class="impact-stats">
+
+            <div class="stat-card level-1">
+
+                <h3>
+                    <span class="counter" data-target="73">0</span>+
+                </h3>
+
+                <p>Projetos Desenvolvidos</p>
+
+            </div>
+
+            <div class="stat-card level-2">
+
+                <h3>
+                    <span class="counter" data-target="35">0</span>+
+                </h3>
+
+                <p>Clientes Atendidos</p>
+
+            </div>
+
+            <div class="stat-card level-3">
+
+                <h3>
+                    <span class="counter" data-target="10">0</span>+
+                </h3>
+
+                <p>Parceiros Estratégicos</p>
+
+            </div>
+
+            <div class="stat-card level-4">
+
+                <h3>
+                    <span class="counter" data-target="4">0</span>+
+                </h3>
+
+                <p>Anos de Experiência</p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+  <!-- ======================================================
+                projects
+====================================================== -->
+
+
+<section id="cases" class="cases">
+
+    <div class="container">
+
+        <!-- HEADER -->
+        <div class="cases-header">
+
+            <span class="subtitle">CASE STUDIES</span>
+
+            <h2>Soluções que geram impacto real</h2>
+
+            <p>
+                Projetos desenvolvidos com foco em eficiência, automação e transformação digital para empresas em Angola.
+            </p>
+
+            <!-- FILTROS (OPCIONAL MAS PROFISSIONAL) -->
+            <div class="cases-filters">
+
+    <button class="active" data-filter="all">Todos</button>
+
+    <button data-filter="web">Web</button>
+
+    <button data-filter="automation">Automação</button>
+
+    <button data-filter="iot">IoT</button>
+
+    <button data-filter="ia">IA</button>
+
+    <button data-filter="data">Data & Dashboards</button>
+
+    <button data-filter="3d"> 3D </button>
+
+</div>
+
+        </div>
+
+        <!-- GRID -->
+        <div class="cases-grid">
+
+            <!-- CASE 1 -->
+            
+<div class="case-card" data-category="web">
+
+    <div class="case-image">
+        <img src="assets/img/case-pizzaria.jpg" alt="Website Pizzaria">
+    </div>
+
+    <div class="case-content">
+
+        <div class="case-meta">
+            <span>Web</span>
+            <span>Restauração</span>
+        </div>
+
+        <h3>Website para Pizzaria</h3>
+
+        <p class="case-summary">
+            Plataforma digital para apresentação de menu, pedidos online e reforço de presença de marca.
+        </p>
+
+        <div class="case-footer">
+            <span>Inovação digital</span>
+        </div>
+
+    </div>
+
+</div>
+<!-- CASE 5 -->
+<div class="case-card" data-category="web">
+
+    <div class="case-image">
+        <img src="assets/img/case-eventos.jpg" alt="Website Gestão de Eventos">
+    </div>
+
+    <div class="case-content">
+
+        <div class="case-meta">
+            <span>Web</span>
+            <span>Eventos</span>
+        </div>
+
+        <h3>Website para Empresa de Gestão de Eventos</h3>
+
+        <p class="case-summary">
+            Site institucional com portfólio de eventos, contactos e apresentação de serviços.
+        </p>
+
+        <div class="case-footer">
+            <span>Gestão web</span>
+        </div>
+
+    </div>
+
+</div>
+            <!-- CASE 2 -->
+            <div class="case-card" data-category="iot">
+
+                <div class="case-image">
+                    <img src="img/case2.jpg" alt="Case 2">
+                </div>
+
+                <div class="case-content">
+
+                    <div class="case-meta">
+                        <span>IoT</span>
+                        <span>NFC</span>
+                    </div>
+
+                    <h3>Sistema de Controlo de Acessos NFC</h3>
+
+                    <p class="case-summary">
+                        Implementação de controlo inteligente de presença e rastreamento de acessos.
+                    </p>
+
+                    <div class="case-footer">
+                        <span>Redução de erros manuais</span>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- CASE 6 -->
+<div class="case-card" data-category="automation">
+
+    <div class="case-image">
+        <img src="assets/img/case-recrutamento.jpg" alt="Automação de Recrutamento com n8n">
+    </div>
+
+    <div class="case-content">
+
+        <div class="case-meta">
+            <span>Automação</span>
+            <span>Recursos Humanos</span>
+        </div>
+
+        <h3>Automação de Processos de Recrutamento com n8n</h3>
+
+        <p class="case-summary">
+            Fluxos automatizados de triagem, seleção e acompanhamento de candidatos, integrados de ponta a ponta.
+        </p>
+
+        <div class="case-footer">
+            <span>Dinamizar e automatizar</span>
+        </div>
+
+    </div>
+
+</div>
+
+
+            <!-- CASE 3 -->
+            <div class="case-card" data-category="data">
+
+                <div class="case-image">
+                    <img src="img/case3.jpg" alt="Case 3">
+                </div>
+
+                <div class="case-content">
+
+                    <div class="case-meta">
+                        <span>Data</span>
+                        <span>Dashboard</span>
+                    </div>
+
+                    <h3>Plataforma de Análise de Dados</h3>
+
+                    <p class="case-summary">
+                        Visualização estratégica de métricas operacionais em tempo real.
+                    </p>
+
+                    <div class="case-footer">
+                        <span>Decisão mais rápida</span>
+                    </div>
+
+                </div>
+
+            </div>
+<!-- CASE 6 -->
+<div class="case-card" data-category="automation ia">
+
+    <div class="case-image">
+        <img src="assets/img/case-controlo-qualidade.jpg" alt="Controlo de Qualidade com IA">
+    </div>
+
+    <div class="case-content">
+
+        <div class="case-meta">
+            <span>IA</span>
+            <span>Indústria</span>
+        </div>
+
+        <h3>Controlo de Qualidade com Inteligência Artificial</h3>
+
+        <p class="case-summary">
+            Automação de processos de inspeção e deteção de não conformidades, com aplicação de IA para elevar os padrões de qualidade em ambiente produtivo.
+        </p>
+
+        <div class="case-footer">
+            <span>Dinamizar e acelerar processos para fluxos de qualidade</span>
+        </div>
+
+    </div>
+
+</div>
+
+<!-- CASE 7 -->
+<div class="case-card" data-category="data dashboard">
+
+    <div class="case-image">
+        <img src="assets/img/case-analise-dados.jpg" alt="Análise de Dados e Produtividade">
+    </div>
+
+    <div class="case-content">
+
+        <div class="case-meta">
+            <span>Data</span>
+            <span>Business Intelligence</span>
+        </div>
+
+        <h3>Análise de Dados para Produtividade e Crescimento</h3>
+
+        <p class="case-summary">
+            Modelagem e tratamento de dados aplicados ao cálculo de indicadores de produtividade, com dashboards de apoio à decisão estratégica.
+        </p>
+
+        <div class="case-footer">
+            <span>Análise real do crescimento da empresa</span>
+        </div>
+
+    </div>
+
+</div>
+
+<!-- CASE 8 -->
+<div class="case-card" data-category="3d">
+
+    <div class="case-image">
+        <img src="assets/img/case-cctv-estaleiro.jpg" alt="Projeto CCTV para Estaleiro">
+    </div>
+
+    <div class="case-content">
+
+        <div class="case-meta">
+            <span>3D</span>
+            <span>Engenharia</span>
+        </div>
+
+        <h3>Projeto Técnico de Implementação de CCTV</h3>
+
+        <p class="case-summary">
+            Desenvolvimento de projeto técnico para sistema de videovigilância em estaleiro, com planeamento de cobertura, infraestrutura e integração de segurança.
+        </p>
+
+        <div class="case-footer">
+            <span>Segurança projetada à medida do terreno</span>
+        </div>
+
+    </div>
+
+</div>
+
+<!-- CASE 9 -->
+<div class="case-card" data-category="3d">
+
+    <div class="case-image">
+        <img src="assets/img/case-maquina-industrial.jpg" alt="Desenvolvimento de Equipamento Tecnológico">
+    </div>
+
+    <div class="case-content">
+
+        <div class="case-meta">
+            <span>3D</span>
+            <span>Engenharia</span>
+        </div>
+
+        <h3>Desenvolvimento de Equipamento Tecnológico Industrial</h3>
+
+        <p class="case-summary">
+            Conceção e projeto técnico de máquina industrial para empresas, desde a modelação 3D até à especificação funcional para produção.
+        </p>
+
+        <div class="case-footer">
+            <span>Engenharia aplicada à produção industrial</span>
+        </div>
+
+    </div>
+
+</div>
+
+<!-- CASE 10 -->
+<div class="case-card" data-category="iot">
+
+    <div class="case-image">
+        <img src="assets/img/case-escritorio-inteligente.jpg" alt="Sistema Inteligente para Escritórios">
+    </div>
+
+    <div class="case-content">
+
+        <div class="case-meta">
+            <span>IoT</span>
+            <span>Corporativo</span>
+        </div>
+
+        <h3>Sistemas Inteligentes para Escritórios</h3>
+
+        <p class="case-summary">
+            Integração de dispositivos IoT para automação de espaços de trabalho, modernizando iluminação, climatização e controlo de acessos com foco em eficiência corporativa.
+        </p>
+
+        <div class="case-footer">
+            <span>Escritórios preparados para o futuro</span>
+        </div>
+
+    </div>
+
+</div>
+
+
+
+
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+    <!-- BLOG -->
+
+   <!-- =========================================
+     MENTOR TECH KNOWLEDGE CENTER
+========================================== -->
+
+<section class="knowledge">
+
+    <div class="container">
+
+        <div class="knowledge-header">
+
+            <span>MENTOR TECH KNOWLEDGE CENTER</span>
+
+            <h2>Capacitação para Empresas e Profissionais</h2>
+
+            <p>
+                Desenvolvemos competências através de programas de formação,
+                workshops e eventos orientados para inovação, tecnologia e
+                transformação digital.
+            </p>
+
+        </div>
+
+        <div class="knowledge-grid">
+
+            <!-- CARD -->
+
+            <article class="knowledge-card">
+
+                <i data-lucide="briefcase"></i>
+
+                <h3>Formação Corporativa</h3>
+
+                <p>
+                    Programas personalizados para equipas e organizações,
+                    alinhados com os desafios do mercado.
+                </p>
+
+                <a href="#">Saber mais →</a>
+
+            </article>
+
+            <!-- CARD -->
+
+            <article class="knowledge-card">
+
+                <i data-lucide="presentation"></i>
+
+                <h3>Workshops Executivos</h3>
+
+                <p>
+                    Sessões práticas sobre transformação digital,
+                    gestão de projetos, Power BI e Inteligência Artificial.
+                </p>
+
+                <a href="#">Saber mais →</a>
+
+            </article>
+
+            <!-- CARD -->
+
+            <article class="knowledge-card">
+
+                <i data-lucide="users"></i>
+
+                <h3>Eventos & Conferências</h3>
+
+                <p>
+                    Espaços de partilha de conhecimento e networking
+                    para profissionais e empresas.
+                </p>
+
+                <a href="#">Saber mais →</a>
+
+            </article>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+
+    <!-- CONTACT -->
+
+   <!-- ==========================================
+     TECHNOLOGY SOLUTIONS SECTION
+========================================== -->
+
+<section class="tech-solutions">
+
+    <div class="container">
+
+        <div class="tech-content">
+
+
+            <!-- IMAGEM -->
+
+            <div class="tech-image">
+
+                <img 
+                src="assets/images/Gemini_Generated_Image_vmpkhfvmpkhfvmpk.png"
+                alt="Soluções Tecnológicas Mentor Tech">
+
+            </div>
+
+
+
+            <!-- TEXTO -->
+
+            <div class="tech-text">
+
+                <span class="tech-label">
+                    SOLUÇÕES TECNOLÓGICAS
+                </span>
+
+
+                <h2>
+                    Transformamos tecnologia
+                    em resultados para o seu negócio.
+                </h2>
+
+
+                <p>
+
+                    Desenvolvemos soluções digitais
+                    utilizando tecnologias líderes do mercado
+                    para aumentar produtividade, segurança
+                    e eficiência operacional das empresas.
+
+                </p>
+
+
+                <a href="#" class="tech-button">
+                    Falar com um Consultor
+                </a>
+
+
+            </div>
+
+
+        </div>
+
+
+
+        <!-- TECNOLOGIAS -->
+
+
+        <div class="technology-area">
+
+
+            <h3>
+                Tecnologias que utilizamos
+            </h3>
+
+
+
+            <div class="technology-slider">
+
+
+                <div class="technology-track">
+
+
+                    <div class="technology-item">
+                        <img src="assets/ferramentas/Figma-Logo.png">
+                    </div>
+
+
+                    <div class="technology-item">
+                        <img src="assets/ferramentas/images.png">
+                    </div>
+
+
+                    <div class="technology-item">
+                        <img src="assets/ferramentas/Logo_Google_Analytics.svg.png">
+                    </div>
+
+
+                    <div class="technology-item">
+                        <img src="assets/ferramentas/microsft.png">
+                    </div>
+
+
+                    <div class="technology-item">
+                        <img src="assets/ferramentas/png-transparent-n8n-logo-tech-companies.png">
+                    </div>
+
+
+                    <div class="technology-item">
+                        <img src="assets/ferramentas/Power-Bi-Logo-PNG-Pic.png">
+                    </div>
+
+
+                    <div class="technology-item">
+                        <img src="assets/ferramentas/python-3-logo-png-transparent.png">
+                    </div>
+
+
+                    <div class="technology-item">
+                        <img src="assets/ferramentas/Supabase_Logo.png">
+                    </div>
+
+
+
+                    <!-- DUPLICAÇÃO PARA LOOP -->
+
+                    <div class="technology-item">
+                        <img src="assets/logos/microsoft.svg">
+                    </div>
+
+
+                    <div class="technology-item">
+                        <img src="assets/logos/cisco.svg">
+                    </div>
+
+
+                    <div class="technology-item">
+                        <img src="assets/logos/azure.svg">
+                    </div>
+
+
+                </div>
+
+
+            </div>
+
+
+        </div>
+
+
+    </div>
+
+
+</section>
+
+    <!-- FOOTER -->
+
+<!-- ==========================================
+     FOOTER MENTOR TECH
+========================================== -->
+
+<footer class="footer">
+
+
+    <div class="container">
+
+
+        <div class="footer-grid">
+
+
+
+            <!-- EMPRESA -->
+
+            <div class="footer-brand">
+
+
+                <div class="footer-logo">
+
+                    <span>
+                        MENTOR
+                    </span>
+
+                    <strong>
+                        TECH
+                    </strong>
+
+                </div>
+
+
+
+                <p>
+
+                    Soluções tecnológicas inteligentes
+                    para transformar desafios empresariais
+                    em resultados sustentáveis.
+
+                </p>
+
+
+
+                <div class="footer-social">
+
+
+                    <a href="#">
+                        <i data-lucide="linkedin"></i>
+                    </a>
+
+
+                    <a href="#">
+                        <i data-lucide="instagram"></i>
+                    </a>
+
+
+                    <a href="#">
+                        <i data-lucide="facebook"></i>
+                    </a>
+
+
+                    <a href="#">
+                        <i data-lucide="youtube"></i>
+                    </a>
+
+
+                </div>
+
+
+
+            </div>
+
+
+
+
+
+
+            <!-- SERVIÇOS -->
+
+            <div class="footer-column">
+
+
+                <h3>
+                    Serviços
+                </h3>
+
+
+                <ul>
+
+
+                    <li>
+                        <a href="#">
+                            Consultoria Tecnológica
+                        </a>
+                    </li>
+
+
+                    <li>
+                        <a href="#">
+                            Suporte Informático
+                        </a>
+                    </li>
+
+
+                    <li>
+                        <a href="#">
+                            Cibersegurança
+                        </a>
+                    </li>
+
+
+                    <li>
+                        <a href="#">
+                            Transformação Digital
+                        </a>
+                    </li>
+
+
+                    <li>
+                        <a href="#">
+                            Gestão de Projetos
+                        </a>
+                    </li>
+
+
+                </ul>
+
+
+            </div>
+
+
+
+
+
+
+
+            <!-- EMPRESA -->
+
+            <div class="footer-column">
+
+
+                <h3>
+                    Empresa
+                </h3>
+
+
+                <ul>
+
+
+                    <li>
+                        <a href="#">
+                            Sobre Nós
+                        </a>
+                    </li>
+
+
+                    <li>
+                        <a href="#">
+                            Projetos
+                        </a>
+                    </li>
+
+
+                    <li>
+                        <a href="#">
+                            Academia
+                        </a>
+                    </li>
+
+
+                    <li>
+                        <a href="#">
+                            Carreiras
+                        </a>
+                    </li>
+
+
+                    <li>
+                        <a href="#">
+                            Contacto
+                        </a>
+                    </li>
+
+
+                </ul>
+
+
+            </div>
+
+
+
+
+
+
+
+            <!-- CONTACTO -->
+
+            <div class="footer-column footer-contact">
+
+
+                <h3>
+                    Contactos
+                </h3>
+
+
+
+                <p>
+
+                    <i data-lucide="map-pin"></i>
+
+                    Luanda, Angola
+
+                </p>
+
+
+
+
+                <p>
+
+                    <i data-lucide="phone"></i>
+
+                    +244 935 675 989
+
+                </p>
+
+
+
+
+                <p>
+
+                    <i data-lucide="mail"></i>
+
+                    mentor.tech@mentorcompanhia.com
+
+                </p>
+
+
+
+
+            </div>
+
+
+
+        </div>
+
+
+
+
+
+
+
+        <!-- CTA -->
+
+        <div class="footer-cta">
+
+
+            <div>
+
+                <h2>
+                    Pronto para transformar a sua empresa?
+                </h2>
+
+
+                <p>
+                    Fale com a nossa equipa e descubra
+                    como podemos ajudar.
+                </p>
+
+
+            </div>
+
+
+
+            <a href="#">
+                Solicitar Consulta
+            </a>
+
+
+        </div>
+
+
+
+
+
+
+
+        <!-- BOTTOM -->
+
+
+        <div class="footer-bottom">
+
+
+            <p>
+
+                © 2026 Mentor Tech.
+                Todos os direitos reservados.
+
+            </p>
+
+
+
+            <div>
+
+
+                <a href="#">
+                    Política de Privacidade
+                </a>
+
+
+                <a href="#">
+                    Termos de Uso
+                </a>
+
+
+            </div>
+
+
+        </div>
+
+
+
+    </div>
+
+
+</footer>
+
+
+
+
+    <!-- ICONS -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script>lucide.createIcons();</script>
+
+    <!-- APP -->
+    <script src="script.js"></script>
+
+</body>
+
+
+
+</body>
+</html>
