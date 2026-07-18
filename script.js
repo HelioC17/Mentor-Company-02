@@ -395,28 +395,22 @@ document.addEventListener("DOMContentLoaded", () => {
 
     const buttons = document.querySelectorAll(".cases-filters button");
     const cards = document.querySelectorAll(".case-card");
-    const RANDOM_COUNT = 3;
 
-    function showRandomCards() {
+    function showFeaturedCards() {
 
-        // esconde todos primeiro
         cards.forEach(card => {
-            card.style.display = "none";
-        });
-
-        // baralha uma cópia da lista de cards
-        const shuffled = Array.from(cards).sort(() => Math.random() - 0.5);
-
-        // mostra só os primeiros N
-        shuffled.slice(0, RANDOM_COUNT).forEach(card => {
-            card.style.display = "block";
+            if (card.classList.contains("featured")) {
+                card.style.display = "block";
+            } else {
+                card.style.display = "none";
+            }
         });
     }
 
     function applyFilter(filter) {
 
         if (filter === "all") {
-            showRandomCards();
+            showFeaturedCards();
             return;
         }
 
@@ -446,11 +440,9 @@ document.addEventListener("DOMContentLoaded", () => {
 
     });
 
-    // estado inicial: já entra com 3 cards aleatórios, já que "Todos" é o filtro ativo por padrão
     applyFilter("all");
 
 });
-
 
 /* ======================================================
 ACADEMY DRAG SLIDER
