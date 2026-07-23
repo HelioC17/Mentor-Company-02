@@ -15,7 +15,7 @@ html {
 body {
     font-family: 'Inter', Arial, sans-serif;
     color: #1e293b;
-    background: #F97316;
+    background: #050B1F;
     overflow-x: hidden;
 }
 
@@ -49,22 +49,6 @@ section {
                     BUTTONS
 ====================================================== */
 
-.btn {
-    display: inline-block;
-    padding: 10px 20px;
-    border-radius: 6px;
-    background: #F97316;
-    color: #fff;
-    font-size: 14px;
-    transition: .3s;
-}
-
-.btn:hover {
-    transform: translateY(-2px);
-    background: #C1121F;
-}
-
-
 .btn-primary {
     display: inline-block;
     padding: 14px 28px;
@@ -82,295 +66,20 @@ section {
 
 
 /* ======================================================
-                        LOGO
-====================================================== */
-
-.logo {
-    height: 100%;
-    display: flex;
-    align-items: center;
-}
-
-.logo img {
-    max-height: 145px;
-    width: auto;
-    object-fit: contain;
-    transition: .3s;
-}
-
-.logo img:hover {
-    transform: scale(1.05);
-}
-
-
-/* ======================================================
                     NAVIGATION
 ====================================================== */
 
-.nav a {
-
-    margin: 0 12px;
-    font-size: 15px;
-    position: relative;
-
-}
-
-
-.nav a:hover {
-
-    color: #F97316;
-
-}
-
-
-.nav a::after {
-
-    content: "";
-    position: absolute;
-    left: 0;
-    bottom: -6px;
-    width: 0%;
-    height: 2px;
-    background: #F97316;
-    transition: .3s;
-
-}
-
-
-.nav a:hover::after,
-.nav a.active::after {
-
-    width: 100%;
-
-}
-
-
-/* DROPDOWN */
-
 .nav-item {
-
     position: relative;
     display: inline-flex;
     align-items: center;
-
 }
 
-
 .nav-item > a {
-
     display: flex;
     align-items: center;
     gap: 6px;
-
 }
-
-/* ======================================================
-                MEGA MENU CORPORATIVO
-====================================================== */
-
-
-.nav-item {
-
-    position:relative;
-
-}
-
-
-
-/* Caixa principal */
-
-.dropdown-menu {
-
-
-    position:absolute;
-
-    top:45px;
-
-    left:50%;
-
-
-    width:850px;
-
-
-    transform:
-    translate(-50%,15px);
-
-
-    background:#fff;
-
-
-    border-radius:12px;
-
-
-    padding:40px;
-
-
-    box-shadow:
-    0 20px 60px rgba(0,0,0,.15);
-
-
-
-    opacity:0;
-
-    visibility:hidden;
-
-
-    transition:.35s;
-
-
-    z-index:999;
-
-
-
-}
-
-
-
-
-.nav-item:hover .dropdown-menu {
-
-
-    opacity:1;
-
-    visibility:visible;
-
-
-    transform:
-    translate(-50%,0);
-
-
-}
-
-
-
-/* Estrutura interna */
-
-
-.mega-content {
-
-
-    display:grid;
-
-
-    grid-template-columns:
-    35% 65%;
-
-
-    gap:40px;
-
-
-}
-
-
-
-/* Texto esquerdo */
-
-
-.mega-intro h2 {
-
-
-    font-size:28px;
-
-
-    line-height:1.2;
-
-
-    color:#0f172a;
-
-
-}
-
-
-
-.mega-intro h2 strong {
-
-
-    color:#F97316;
-
-
-}
-
-
-
-.mega-intro p {
-
-
-    margin-top:20px;
-
-
-    color:#64748b;
-
-
-    font-size:15px;
-
-
-    line-height:1.6;
-
-
-}
-
-
-
-
-
-/* Lista de serviços */
-
-
-.mega-links {
-
-
-    display:grid;
-
-
-    grid-template-columns:
-    repeat(2,1fr);
-
-
-    gap:15px 30px;
-
-
-}
-
-
-
-.mega-links a {
-
-
-    font-size:15px;
-
-
-    color:#334155;
-
-
-    padding:10px 0;
-
-
-    border-bottom:
-    1px solid #e2e8f0;
-
-
-    transition:.3s;
-
-
-}
-
-
-
-.mega-links a:hover {
-
-
-    color:#F97316;
-
-
-    padding-left:8px;
-
-
-}
-
-/* ======================================================
-                MENTOR COMPANY
-                HEADER SYSTEM
-====================================================== */
 
 /* ==============================
         HEADER BASE
@@ -437,13 +146,13 @@ section {
 
 /* Logo normal (topo, fundo branco) */
 .logo-light {
-    height:110px;
+    height:70px;
     opacity:1;
 }
 
 /* Logo quando header está no estado "scrolled" (fundo azul) */
 .logo-dark {
-    height:110px;
+    height:70px;
     position:absolute;
     top:0;
     left:0;
@@ -670,25 +379,153 @@ section {
         MOBILE BUTTON
 ============================== */
 
-.mobile-toggle {
+.mobile-toggle{
     display:none;
+    width:45px;
+    height:45px;
     background:none;
-    border:0;
+    border:none;
     cursor:pointer;
+    z-index:2001;
 }
 
-.mobile-toggle span {
+.mobile-toggle span{
     display:block;
     width:28px;
     height:3px;
-    margin:5px;
+    margin:6px auto;
     background:#0F172A;
-    transition:.3s;
+    border-radius:5px;
+    transition:.35s;
 }
 
-/* NOVO: barras brancas quando o header está com fundo azul (scroll) */
-.site-header.scrolled .mobile-toggle span {
-    background:#ffffff;
+/* Header azul */
+.site-header.scrolled .mobile-toggle span{
+    background:#fff;
+}
+
+/* animação X */
+.mobile-toggle.active span:nth-child(1){
+    transform:translateY(9px) rotate(45deg);
+}
+
+.mobile-toggle.active span:nth-child(2){
+    opacity:0;
+}
+
+.mobile-toggle.active span:nth-child(3){
+    transform:translateY(-9px) rotate(-45deg);
+}
+
+/* ==================================================
+        MOBILE (breakpoint único: 991px)
+================================================== */
+
+@media(max-width:991px){
+
+    .main-navigation{
+        position:fixed;
+        top:0;
+        right:-100%;
+        width:320px;
+        max-width:90%;
+        height:100vh;
+        background:#ffffff;
+        box-shadow:-15px 0 35px rgba(0,0,0,.15);
+        transition:.35s;
+        z-index:2000;
+        padding:110px 30px 40px;
+        overflow-y:auto;
+        display: flex;
+    }
+
+    .main-navigation.active{
+        right:0;
+    }
+
+    .mobile-toggle{
+        display:block;
+    }
+
+    .header-actions{
+        display:none;
+    }
+
+    .nav-list{
+        flex-direction:column;
+        align-items:flex-start;
+        gap:0;
+        width: 100%;
+    }
+
+    .nav-item{
+        width:100%;
+    }
+
+    .nav-link{
+        display:block;
+        width:100%;
+        padding:18px 0;
+        color:#0F172A !important;
+        border-bottom:1px solid #ECECEC;
+    }
+
+    .nav-link::after{
+        display:none;
+    }
+
+    /* desativa mega menu por omissão */
+    .mega-menu{
+        position:static;
+        width:100%;
+        transform:none;
+        opacity:1;
+        visibility:visible;
+        box-shadow:none;
+        padding:15px 0;
+        display:none;
+    }
+
+    .dropdown.open .mega-menu{
+        display:block;
+    }
+
+    .mega-content{
+        display:block;
+    }
+
+    .mega-introduction{
+        display:none;
+    }
+
+    .mega-services{
+        display:flex;
+        flex-direction:column;
+    }
+
+    .mega-services a{
+        background:#F8FAFC;
+        margin-bottom:8px;
+    }
+
+    .header-container {
+        width:92%;
+    }
+}
+
+.menu-overlay{
+    position:fixed;
+    inset:0;
+    background:rgba(0,0,0,.45);
+    opacity:0;
+    visibility:hidden;
+    transition:.3s;
+    z-index:1999;
+}
+
+.menu-overlay.active{
+    opacity:1;
+    visibility:visible;
 }
 
 /* ==============================
@@ -796,39 +633,8 @@ section {
     font-size:16px;
 }
 
-/* MOBILE: esconde junto com o resto das ações do header */
-@media(max-width:950px){
-    .header-actions {
-        display:none;
-    }
-}
-
-
-/* ==============================
-        RESPONSIVO
-============================== */
-
-@media(max-width:950px){
-    .main-navigation,
-    .header-actions {
-        display:none;
-    }
-
-    .mobile-toggle {
-        display:block;
-    }
-
-    .header-container {
-        width:92%;
-    }
-
-    .mega-menu {
-        display:none;
-    }
-}
-
 /* ======================================================
-                    HERO (CORRIGIDO 100%)
+                    HERO
 ====================================================== */
 
 #hero {
@@ -847,8 +653,6 @@ section {
     min-width: 100%;
     height: 100vh;
     position: relative;
-
-    /* 🔥 IMPORTANTE: só o active aparece */
     display: none;
 }
 
@@ -879,7 +683,9 @@ section {
 }
 
 .content h1 {
-    font-size: 52px;
+    font-size: 54px;
+    line-height: 1.1;
+    text-shadow: 0 0 20px rgba(249,115,22,0.25);
 }
 
 .content p {
@@ -910,25 +716,14 @@ section {
     position: relative;
 }
 
-/* ativo = “energia” */
 .nav-dot.active {
     height: 48px;
     background: linear-gradient(180deg, #ffffff, #ffffff);
     box-shadow: 0 0 12px rgba(0, 0, 0, 0.6);
 }
 
-/* hover glow */
 .nav-dot:hover {
     background: rgba(255,255,255,0.7);
-}
-
-/* ======================================================
-                HERO FUTURISTA UPGRADE
-====================================================== */
-
-.hero {
-    position: relative;
-    overflow: hidden;
 }
 
 /* GRID FUTURISTA */
@@ -943,7 +738,6 @@ section {
     animation: gridMove 20s linear infinite;
 }
 
-
 /* TAG TECNOLÓGICA */
 .tag {
     display: inline-block;
@@ -951,13 +745,6 @@ section {
     letter-spacing: 2px;
     color: #94a3b8;
     margin-bottom: 10px;
-}
-
-/* TEXTO COM GLOW LEVE */
-.content h1 {
-    font-size: 54px;
-    line-height: 1.1;
-    text-shadow: 0 0 20px rgba(249,115,22,0.25);
 }
 
 /* BOTÃO COM EFEITO NEON */
@@ -992,7 +779,6 @@ section {
     50% { transform: translateY(30px); }
 }
 
-
 /* ======================================================
                 PARTICLES CANVAS
 ====================================================== */
@@ -1008,7 +794,6 @@ section {
     mix-blend-mode: screen;
 }
 
-
 /* ======================================================
                     ÁREAS DE ATUAÇÃO
 ====================================================== */
@@ -1018,8 +803,6 @@ section {
     padding:140px 0;
     overflow:hidden;
 }
-
-/* ================= HEADER ================= */
 
 .areas-header{
     width:min(1200px,90%);
@@ -1056,7 +839,6 @@ section {
     position:relative;
 }
 
-/* TRACK AGORA É APENAS CONTAINER DO STACK */
 .carousel-track{
     position: relative;
     height: 520px;
@@ -1068,8 +850,9 @@ section {
 
 .area-card{
     position: absolute;
-    right: 0;
     width: 680px;
+    left: 50%;
+    transform: translateX(-50%);
 
     transition: all 0.6s cubic-bezier(0.2, 0.8, 0.2, 1);
 
@@ -1089,10 +872,6 @@ section {
     backdrop-filter:blur(25px);
 
     box-shadow:0 40px 80px rgba(0,0,0,.45);
-}
-.area-card{
-    left: 50%;
-    transform: translateX(-50%);
 }
 
 /* brilho */
@@ -1117,28 +896,24 @@ section {
 
 .area-card.active{
     transform: translateX(-50%) scale(1.05);
-    left: 50%;
     z-index: 10;
     opacity: 1;
 }
 
 .area-card.next{
     transform: translateX(20%) scale(0.92);
-    left: 50%;
     z-index: 6;
     opacity: 0.85;
 }
 
 .area-card.back{
     transform: translateX(45%) scale(0.85);
-    left: 50%;
     z-index: 4;
     opacity: 0.6;
 }
 
 .area-card.hidden{
     transform: translateX(80%) scale(0.75);
-    left: 50%;
     z-index: 1;
     opacity: 0;
 }
@@ -1246,7 +1021,6 @@ section {
     right:20px;
 }
 
-
 /* ======================================================
                 IMPACT SECTION
 ====================================================== */
@@ -1256,7 +1030,6 @@ section {
     padding:140px 0;
 }
 
-/* NOVO: cor do subtítulo "O NOSSO IMPACTO" */
 .impact-content .subtitle{
     display:inline-block;
     color:#F97316;
@@ -1288,19 +1061,11 @@ section {
     max-width:620px;
 }
 
-/* =======================
-   STATS CONTAINER
-======================= */
-
 .impact-stats {
     position: relative;
     width: 100%;
     height: 520px;
 }
-
-/* =======================
-   STAT CARD BASE
-======================= */
 
 .stat-card{
     position: absolute;
@@ -1312,19 +1077,16 @@ section {
     backdrop-filter: blur(20px);
     box-shadow: 0 25px 60px rgba(0,0,0,.35);
     cursor: pointer;
-
     transition: transform 0.3s ease, border-color 0.3s ease;
     z-index: 1;
 }
 
-/* HOVER (não interfere com float) */
 .stat-card:hover{
     transform: scale(1.04);
     border-color:#F97316;
     z-index: 10;
 }
 
-/* TEXTO */
 .stat-card h3 {
     font-size: 72px;
     font-weight: 700;
@@ -1336,49 +1098,29 @@ section {
     color:#CBD5E1;
 }
 
-/* =======================
-   POSICIONAMENTO PIRÂMIDE
-======================= */
-
 .level-1{
     top: 0;
     left: 50%;
     transform: translateX(-50%);
+    animation: float1 7s ease-in-out infinite;
 }
 
 .level-2{
     top: 140px;
     left: 10%;
+    animation: float2 6.5s ease-in-out infinite;
 }
 
 .level-3{
     top: 140px;
     right: 10%;
+    animation: float3 7.5s ease-in-out infinite;
 }
 
 .level-4{
     top: 320px;
     left: 50%;
     transform: translateX(-50%);
-}
-
-/* =======================
-   FLUTUAÇÃO (SEM CONFLITO)
-======================= */
-
-.level-1{
-    animation: float1 7s ease-in-out infinite;
-}
-
-.level-2{
-    animation: float2 6.5s ease-in-out infinite;
-}
-
-.level-3{
-    animation: float3 7.5s ease-in-out infinite;
-}
-
-.level-4{
     animation: float4 8s ease-in-out infinite;
 }
 
@@ -1406,8 +1148,6 @@ section {
     100% { transform: translate(-50%, 0px) rotate(1deg); }
 }
 
-
-
 /* =========================
    CASE STUDIES (PREMIUM B2B)
 ========================= */
@@ -1418,7 +1158,6 @@ section {
     color:#0f172a;
 }
 
-/* HEADER */
 .cases-header{
     text-align:center;
     margin-bottom:70px;
@@ -1524,7 +1263,7 @@ section {
     color:#16a34a;
 }
 
-/* HOVER (CONSULTORIA STYLE) */
+/* HOVER */
 .case-card:hover{
     transform:translateY(-10px);
     box-shadow:0 25px 60px rgba(0,0,0,0.08);
@@ -1548,159 +1287,105 @@ section {
     }
 }
 
-
-
-
 /*==========================================
 KNOWLEDGE CENTER
 ==========================================*/
 
 .knowledge{
-
     padding:120px 0;
     background:#071324;
-
 }
 
 .knowledge-header{
-
     text-align:center;
     max-width:700px;
     margin:auto auto 70px;
-
 }
 
 .knowledge-header span{
-
     color:#F97316;
     letter-spacing:3px;
     font-size:.8rem;
     font-weight:700;
-
 }
 
 .knowledge-header h2{
-
     color:#fff;
     font-size:2.8rem;
     margin:20px 0;
-
 }
 
 .knowledge-header p{
-
     color:#94A3B8;
     line-height:1.8;
-
 }
 
 .knowledge-grid{
-
     display:grid;
-
     grid-template-columns:
     repeat(auto-fit,minmax(320px,1fr));
-
     gap:30px;
-
 }
 
 .knowledge-card{
-
     background:#0D1B2A;
-
     border:1px solid rgba(255,255,255,.08);
-
     border-radius:18px;
-
     padding:40px;
-
     transition:.35s;
-
 }
 
 .knowledge-card:hover{
-
     transform:translateY(-8px);
-
     border-color:#F97316;
-
 }
 
 .knowledge-card svg{
-
     width:34px;
     height:34px;
-
     color:#F97316;
-
     margin-bottom:25px;
-
 }
 
 .knowledge-card h3{
-
     color:white;
-
     margin-bottom:18px;
-
     font-size:1.4rem;
-
 }
 
 .knowledge-card p{
-
     color:#94A3B8;
-
     line-height:1.8;
-
     margin-bottom:25px;
-
 }
 
 .knowledge-card a{
-
     color:#F97316;
-
     font-weight:600;
-
     text-decoration:none;
-
 }
 
 .knowledge-card a:hover{
-
     opacity:.8;
-
 }
-
 
 /* ==========================================
 TECH SOLUTIONS
 ========================================== */
 
-
 .tech-solutions{
-
     background:#ffffff;
     padding:120px 0;
     overflow:hidden;
-
 }
 
-
-
 .tech-content{
-
     display:flex;
     align-items:center;
     gap:80px;
-
 }
 
-
 /* IMAGE */
-
 .tech-image{
     width:50%;
     border-radius:16px;
@@ -1714,100 +1399,47 @@ TECH SOLUTIONS
     display:block;
 }
 
-
-
-
 /* TEXT */
-
-
 .tech-text{
-
     width:50%;
-
 }
-
-
 
 .tech-label{
-
     color:#F97316;
-
     font-size:.8rem;
-
     letter-spacing:3px;
-
     font-weight:700;
-
 }
-
-
 
 .tech-text h2{
-
-
     color:#0f172a;
-
     font-size:3rem;
-
     line-height:1.15;
-
     margin:20px 0;
-
-
 }
-
-
 
 .tech-text p{
-
-
     color:#94A3B8;
-
     font-size:1.05rem;
-
     line-height:1.8;
-
     max-width:520px;
-
-
 }
-
-
-
 
 .tech-button{
-
-
     display:inline-block;
-
     margin-top:30px;
-
     padding:14px 28px;
-
     border-radius:8px;
-
     background:#F97316;
-
     color:white;
-
     text-decoration:none;
-
     font-weight:600;
-
     transition:.3s;
-
 }
-
-
 
 .tech-button:hover{
-
-
     transform:translateY(-3px);
-
 }
-
-
 
 /* ==========================================
 TECHNOLOGY GRID (2 FILAS FIXAS)
@@ -1819,7 +1451,7 @@ TECHNOLOGY GRID (2 FILAS FIXAS)
 }
 
 .technology-area h3{
-    color:white;
+    color:#0f172a;
     margin-bottom:40px;
     font-size:1.4rem;
 }
@@ -1857,7 +1489,6 @@ TECHNOLOGY GRID (2 FILAS FIXAS)
     transform:scale(1.15);
 }
 
-/* RESPONSIVO: em ecrãs pequenos, deixa quebrar livremente em vez de forçar 2 filas */
 @media(max-width:700px){
     .technology-grid{
         grid-template-rows:none;
@@ -1869,524 +1500,216 @@ TECHNOLOGY GRID (2 FILAS FIXAS)
     }
 }
 
-
-
 /* ==========================================
 FOOTER
 ========================================== */
 
-
 .footer{
-
-
     background:
     linear-gradient(
         180deg,
         #071426,
         #030712
     );
-
-
     padding:90px 0 30px;
-
     border-top:
     1px solid rgba(255,255,255,.08);
-
-
 }
-
-
-
-
 
 .footer-grid{
-
-
     display:grid;
-
     grid-template-columns:
     1.5fr 1fr 1fr 1.2fr;
-
     gap:50px;
-
-
 }
-
-
-
 
 /* LOGO */
-
-
 .footer-logo{
-
-
     font-size:2rem;
-
     font-weight:800;
-
     margin-bottom:20px;
-
-
 }
-
 
 .footer-logo span{
-
     color:white;
-
 }
-
 
 .footer-logo strong{
-
     color:#F97316;
-
 }
-
-
-
 
 .footer-brand p{
-
-
     color:#94A3B8;
-
     line-height:1.8;
-
     max-width:320px;
-
-
 }
-
-
-
-
 
 /* SOCIAL */
-
-
 .footer-social{
-
-
     display:flex;
-
     gap:15px;
-
     margin-top:30px;
-
-
 }
-
-
 
 .footer-social a{
-
-
     width:42px;
-
     height:42px;
-
     border-radius:50%;
-
-
     display:flex;
-
     align-items:center;
-
     justify-content:center;
-
-
     background:
     rgba(255,255,255,.08);
-
-
     color:white;
-
-
     transition:.3s;
-
-
 }
-
-
 
 .footer-social svg{
-
     width:18px;
-
 }
-
-
 
 .footer-social a:hover{
-
-
     background:#F97316;
-
     transform:translateY(-4px);
-
-
 }
-
-
-
-
-
 
 /* COLUMNS */
-
-
 .footer-column h3{
-
-
     color:white;
-
     font-size:1.1rem;
-
     margin-bottom:25px;
-
-
 }
-
-
-
 
 .footer-column ul{
-
-
     list-style:none;
-
     padding:0;
-
-
 }
-
-
 
 .footer-column li{
-
-
     margin-bottom:15px;
-
-
 }
-
-
 
 .footer-column a{
-
-
     color:#94A3B8;
-
     text-decoration:none;
-
     transition:.3s;
-
-
 }
-
-
 
 .footer-column a:hover{
-
-
     color:#F97316;
-
-
 }
-
-
-
-
 
 /* CONTACT */
-
-
 .footer-contact p{
-
-
     display:flex;
-
     align-items:center;
-
     gap:12px;
-
-
     color:#94A3B8;
-
-
 }
-
-
 
 .footer-contact svg{
-
-
     width:18px;
-
     color:#F97316;
-
-
 }
 
-
-
-
-
-
-
 /* CTA */
-
-
 .footer-cta{
-
-
     margin-top:70px;
-
-
     padding:35px 45px;
-
-
     border-radius:20px;
-
-
     background:
-
-
     linear-gradient(
         120deg,
         rgba(249,115,22,.15),
         rgba(255,255,255,.03)
     );
-
-
     border:
     1px solid rgba(255,255,255,.08);
-
-
     display:flex;
-
     justify-content:space-between;
-
     align-items:center;
-
-
 }
-
-
-
-
 
 .footer-cta h2{
-
-
     color:white;
-
     margin-bottom:10px;
-
-
 }
-
-
 
 .footer-cta p{
-
-
     color:#94A3B8;
-
-
 }
-
-
-
-
 
 .footer-cta a{
-
-
     background:#F97316;
-
     color:white;
-
     padding:14px 30px;
-
     border-radius:8px;
-
     text-decoration:none;
-
     font-weight:600;
-
-
 }
-
-
-
-
-
-
 
 /* BOTTOM */
-
-
 .footer-bottom{
-
-
     margin-top:50px;
-
-
     padding-top:25px;
-
-
     border-top:
     1px solid rgba(255,255,255,.08);
-
-
     display:flex;
-
     justify-content:space-between;
-
-
     color:#64748B;
-
     font-size:.9rem;
-
-
 }
-
-
 
 .footer-bottom div{
-
-
     display:flex;
-
     gap:25px;
-
-
 }
-
-
-
-
-
-
 
 @media(max-width:900px){
 
+    .footer-grid{
+        grid-template-columns:1fr;
+    }
 
-.footer-grid{
+    .footer-cta{
+        flex-direction:column;
+        gap:25px;
+        text-align:center;
+    }
 
-
-    grid-template-columns:1fr;
-
-
+    .footer-bottom{
+        flex-direction:column;
+        gap:20px;
+        text-align:center;
+    }
 }
-
-
-
-.footer-cta{
-
-
-    flex-direction:column;
-
-    gap:25px;
-
-    text-align:center;
-
-
-}
-
-
-
-.footer-bottom{
-
-
-    flex-direction:column;
-
-    gap:20px;
-
-    text-align:center;
-
-
-}
-
-
-
-}
-
-
 
 /* ==========================================
 RESPONSIVE
 ========================================== */
 
-
 @media(max-width:900px){
 
-
-.tech-content{
-
-
-    flex-direction:column;
-
-}
-
-
-
-.tech-image,
-.tech-text{
-
-
-    width:100%;
-
-}
-
-
-
-.tech-text h2{
-
-
-    font-size:2.2rem;
-
-}
-
-
-
-.tech-image img{
-
-
-    height:350px;
-
-}
-
-
-}
-
-/* =========================
-   RESPONSIVO
-========================= */
-
-@media(max-width:1000px){
-
-    .projects-grid{
-        grid-template-columns:repeat(2, 1fr);
+    .tech-content{
+        flex-direction:column;
     }
 
-}
-
-@media(max-width:600px){
-
-    .projects-grid{
-        grid-template-columns:1fr;
+    .tech-image,
+    .tech-text{
+        width:100%;
     }
 
+    .tech-text h2{
+        font-size:2.2rem;
+    }
+
+    .tech-image img{
+        height:350px;
+    }
 }
-
-
 
 /* =======================
-   RESPONSIVO
+   RESPONSIVO IMPACT
 ======================= */
 
 @media(max-width:1000px){
@@ -2420,55 +1743,88 @@ RESPONSIVE
 }
 
 /* ======================================================
-                    RESPONSIVO
+                    RESPONSIVO AREAS
 ====================================================== */
 
 @media(max-width:900px){
 
-    .area-card{
-        width:88vw;
-        height:auto;
-        min-height:380px;
+    .areas{
+        padding:80px 0 60px;
     }
 
     .areas h2{
         font-size:2.3rem;
     }
-}
 
-/* ================= RESPONSIVO ================= */
+    .carousel{
+        display:grid;
+        grid-template-areas:
+            "track track"
+            "prev  next";
+        row-gap:16px;
+        width:90%;
+        max-width:1200px;
+        margin:0 auto;
+    }
 
-@media(max-width:900px){
+    .carousel-track{
+        grid-area: track;
+        position:relative;
+        height:auto;
+        display:flex;
+        justify-content:center;
+    }
 
     .area-card{
-
-        flex:0 0 88vw;
-
+        width:100%;
         height:auto;
-
-        min-height:380px;
-
+        min-height:auto;
+        position:relative;
+        display:none;
+        margin:0 auto;
     }
 
-    .areas h2{
-
-        font-size:2.3rem;
-
+    .area-card.active{
+        display:block;
+        position:relative;
+        left:auto;
+        transform:none;
+        margin:0 auto;
     }
 
+    .area-card.next,
+    .area-card.back,
+    .area-card.hidden{
+        display:none;
+    }
+
+    .carousel-btn{
+        position:static;
+        transform:none;
+        width:56px;
+        height:56px;
+    }
+
+    .carousel-btn:active{
+        transform:scale(0.92);
+    }
+
+    .prev{
+        grid-area: prev;
+        justify-self:end;
+    }
+
+    .next{
+        grid-area: next;
+        justify-self:start;
+    }
 }
-
 
 /* ======================================================
-                    RESPONSIVE
+                    RESPONSIVE GERAL
 ====================================================== */
 
 @media (max-width: 768px) {
-
-    #header .container {
-        flex-direction: column;
-        gap: 10px;
-    }
 
     .content h1 {
         font-size: 34px;
@@ -2478,4 +1834,3 @@ RESPONSIVE
         font-size: 15px;
     }
 }
-
