@@ -1,0 +1,327 @@
+/* ======================================================
+   PROJETOS.CSS — Bento grid de fotos + processo em 5 passos
+   Usado em: APENAS projetos.html
+====================================================== */
+
+/* ======================================================
+                    CABEÇALHOS DE SECÇÃO
+====================================================== */
+
+.section-header{
+    max-width:650px;
+    margin:0 auto 60px;
+    text-align:center;
+}
+
+.section-header .subtitle{
+    display:inline-block;
+    color:#F97316;
+    font-size:.8rem;
+    letter-spacing:4px;
+    font-weight:700;
+    margin-bottom:18px;
+}
+
+.section-header h2{
+    font-size:2.6rem;
+    margin-bottom:16px;
+}
+
+.section-header p{
+    line-height:1.8;
+    font-size:1.05rem;
+}
+
+.section-header:not(.light) h2{
+    color:#0f172a;
+}
+
+.section-header:not(.light) p{
+    color:#64748b;
+}
+
+.section-header.light h2{
+    color:#fff;
+}
+
+.section-header.light p{
+    color:#94A3B8;
+}
+
+/* ======================================================
+                BENTO GRID DE PROJETOS
+====================================================== */
+
+.projects-bento-section{
+    background:#ffffff;
+    padding:140px 0;
+}
+
+.projects-bento{
+    display:grid;
+    grid-template-columns:repeat(4, 1fr);
+    grid-auto-rows:210px;
+    grid-auto-flow:dense;
+    gap:18px;
+}
+
+.bento-tile{
+    position:relative;
+    display:block;
+    grid-column:span 1;
+    grid-row:span 1;
+    border-radius:18px;
+    overflow:hidden;
+    background-size:cover;
+    background-position:center;
+    box-shadow:0 15px 40px rgba(0,0,0,.08);
+
+    opacity:0;
+    transform:translateY(24px);
+    transition:opacity .6s ease, transform .6s ease, box-shadow .3s ease;
+}
+
+.bento-tile.in-view{
+    opacity:1;
+    transform:translateY(0);
+}
+
+.bento-tile.tile-big{
+    grid-column:span 2;
+    grid-row:span 2;
+}
+
+.bento-tile.tile-wide{
+    grid-column:span 2;
+    grid-row:span 1;
+}
+
+.bento-tile.tile-tall{
+    grid-column:span 1;
+    grid-row:span 2;
+}
+
+.bento-tile:hover{
+    box-shadow:0 25px 55px rgba(0,0,0,.18);
+}
+
+/* camada escura + texto — só aparece no hover */
+.tile-overlay{
+    position:absolute;
+    inset:0;
+    display:flex;
+    flex-direction:column;
+    justify-content:flex-end;
+    padding:22px;
+    background:linear-gradient(180deg, transparent 40%, rgba(5,11,31,.92) 100%);
+    opacity:0;
+    transform:translateY(12px);
+    transition:opacity .35s ease, transform .35s ease;
+}
+
+.bento-tile:hover .tile-overlay{
+    opacity:1;
+    transform:translateY(0);
+}
+
+.tile-category{
+    display:inline-block;
+    color:#F97316;
+    font-size:.72rem;
+    font-weight:700;
+    letter-spacing:1px;
+    text-transform:uppercase;
+    margin-bottom:6px;
+}
+
+.tile-overlay h3{
+    color:#fff;
+    font-size:1.05rem;
+    line-height:1.3;
+}
+
+/* ======================================================
+        COMO TRABALHAMOS — STEPPER HORIZONTAL
+====================================================== */
+
+.work-process{
+    background:#050B1F;
+    padding:140px 0;
+}
+
+.stepper{
+    display:grid;
+    grid-template-columns:repeat(5, 1fr);
+    gap:0;
+}
+
+.stepper-step{
+    position:relative;
+    padding:0 20px;
+    text-align:center;
+
+    opacity:0;
+    transform:translateY(20px);
+    transition:opacity .6s ease, transform .6s ease;
+}
+
+.stepper-step.in-view{
+    opacity:1;
+    transform:translateY(0);
+}
+
+.stepper-marker{
+    position:relative;
+    width:64px;
+    height:64px;
+    margin:0 auto 26px;
+    border-radius:50%;
+    background:#0D1B2A;
+    border:2px solid rgba(255,255,255,.12);
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    z-index:2;
+    transition:.4s;
+}
+
+.stepper-step.in-view .stepper-marker{
+    background:#F97316;
+    border-color:#F97316;
+    box-shadow:0 0 20px rgba(249,115,22,.5);
+}
+
+.stepper-marker svg{
+    width:26px;
+    height:26px;
+    color:#F97316;
+    transition:.4s;
+}
+
+.stepper-step.in-view .stepper-marker svg{
+    color:#fff;
+}
+
+/* linha que liga um passo ao seguinte */
+.stepper-line{
+    position:absolute;
+    top:32px;
+    left:calc(50% + 32px);
+    width:calc(100% - 64px);
+    height:2px;
+    background:rgba(255,255,255,.12);
+}
+
+.stepper-step h3{
+    color:#fff;
+    font-size:1.05rem;
+    margin-bottom:12px;
+}
+
+.stepper-step p{
+    color:#94A3B8;
+    font-size:.92rem;
+    line-height:1.7;
+}
+
+/* ======================================================
+                    CTA FINAL
+====================================================== */
+
+.projects-cta{
+    background:#071324;
+    padding:100px 0;
+}
+
+.projects-cta-inner{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    gap:40px;
+    padding:45px 55px;
+    border-radius:24px;
+    background:linear-gradient(120deg, rgba(249,115,22,.15), rgba(255,255,255,.03));
+    border:1px solid rgba(255,255,255,.08);
+}
+
+.projects-cta-inner h2{
+    color:#fff;
+    font-size:1.9rem;
+    margin-bottom:10px;
+}
+
+.projects-cta-inner p{
+    color:#94A3B8;
+    max-width:480px;
+}
+
+/* ======================================================
+                    RESPONSIVO
+====================================================== */
+
+@media(max-width:1000px){
+
+    .projects-bento{
+        grid-template-columns:repeat(2, 1fr);
+    }
+
+    .bento-tile.tile-big,
+    .bento-tile.tile-wide{
+        grid-column:span 2;
+    }
+
+    .bento-tile.tile-tall{
+        grid-column:span 1;
+        grid-row:span 1;
+    }
+
+    .stepper{
+        grid-template-columns:1fr;
+        gap:50px;
+    }
+
+    .stepper-step{
+        text-align:left;
+        padding:0 0 0 84px;
+    }
+
+    .stepper-marker{
+        position:absolute;
+        top:0;
+        left:0;
+        margin:0;
+    }
+
+    .stepper-line{
+        top:64px;
+        left:31px;
+        width:2px;
+        height:calc(100% + 50px - 64px);
+    }
+}
+
+@media(max-width:600px){
+
+    .projects-bento{
+        grid-template-columns:1fr;
+    }
+
+    .bento-tile,
+    .bento-tile.tile-big,
+    .bento-tile.tile-wide,
+    .bento-tile.tile-tall{
+        grid-column:span 1;
+        grid-row:span 1;
+        height:260px;
+    }
+
+    .section-header h2{
+        font-size:2rem;
+    }
+
+    .projects-cta-inner{
+        flex-direction:column;
+        text-align:center;
+        padding:35px;
+    }
+}

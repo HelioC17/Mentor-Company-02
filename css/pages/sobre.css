@@ -1,0 +1,287 @@
+/* ======================================================
+   SOBRE.CSS — Banner, história, valores, números, equipa
+   Usado em: APENAS sobre.html
+
+   Nota: o banner de topo (.page-hero, .breadcrumb) já não
+   está aqui — foi movido para css/page-hero.css, partilhado
+   com outras páginas internas (ex: servicos.html).
+====================================================== */
+
+/* ======================================================
+                    A NOSSA HISTÓRIA
+====================================================== */
+
+.about-story{
+    background:#050B1F;
+    padding:120px 0;
+}
+
+.about-story-grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:80px;
+    align-items:center;
+}
+
+.about-story-image{
+    border-radius:20px;
+    overflow:hidden;
+}
+
+.about-story-image img{
+    width:100%;
+    height:420px;
+    object-fit:cover;
+}
+
+.about-story-text .subtitle{
+    display:inline-block;
+    color:#F97316;
+    font-size:.8rem;
+    letter-spacing:4px;
+    font-weight:700;
+    margin-bottom:18px;
+}
+
+.about-story-text h2{
+    color:#fff;
+    font-size:2.4rem;
+    line-height:1.25;
+    margin-bottom:22px;
+}
+
+.about-story-text p{
+    color:#94A3B8;
+    font-size:1.05rem;
+    line-height:1.8;
+    margin-bottom:18px;
+    max-width:560px;
+}
+
+.about-story-text .btn-primary{
+    margin-top:12px;
+}
+
+/* ======================================================
+                MISSÃO, VISÃO E VALORES
+====================================================== */
+
+.about-values{
+    background:#071324;
+    padding:120px 0;
+}
+
+.about-values-header{
+    text-align:center;
+    max-width:650px;
+    margin:0 auto 60px;
+}
+
+.about-values-header .subtitle{
+    display:inline-block;
+    color:#F97316;
+    font-size:.8rem;
+    letter-spacing:4px;
+    font-weight:700;
+    margin-bottom:18px;
+}
+
+.about-values-header h2{
+    color:#fff;
+    font-size:2.6rem;
+}
+
+.about-values-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:30px;
+}
+
+.value-card{
+    background:#0D1B2A;
+    border:1px solid rgba(255,255,255,.08);
+    border-radius:18px;
+    padding:40px;
+    transition:.35s;
+}
+
+.value-card:hover{
+    transform:translateY(-8px);
+    border-color:#F97316;
+}
+
+.value-icon{
+    width:60px;
+    height:60px;
+    border-radius:16px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    background:rgba(249,115,22,.12);
+    margin-bottom:28px;
+}
+
+.value-icon svg{
+    width:28px;
+    height:28px;
+    color:#F97316;
+}
+
+.value-card h3{
+    color:#fff;
+    font-size:1.4rem;
+    margin-bottom:14px;
+}
+
+.value-card p{
+    color:#94A3B8;
+    line-height:1.8;
+}
+
+/* ======================================================
+                NÚMEROS QUE NOS DEFINEM
+====================================================== */
+
+.about-stats{
+    background:#050B1F;
+    padding:100px 0;
+}
+
+.about-stats-grid{
+    display:grid;
+    grid-template-columns:repeat(4, 1fr);
+    gap:30px;
+    text-align:center;
+}
+
+.about-stat h3{
+    font-size:3rem;
+    font-weight:700;
+    color:#F97316;
+    margin-bottom:10px;
+}
+
+.about-stat p{
+    color:#CBD5E1;
+    font-size:1rem;
+}
+
+/* ======================================================
+                    A NOSSA EQUIPA
+====================================================== */
+
+.about-team{
+    background:#ffffff;
+    padding:120px 0;
+    color:#0f172a;
+}
+
+.about-team-header{
+    text-align:center;
+    max-width:650px;
+    margin:0 auto 60px;
+}
+
+.about-team-header .subtitle{
+    display:inline-block;
+    color:#F97316;
+    font-size:.8rem;
+    letter-spacing:4px;
+    font-weight:700;
+    margin-bottom:18px;
+}
+
+.about-team-header h2{
+    font-size:2.6rem;
+    margin-bottom:18px;
+}
+
+.about-team-header p{
+    color:#64748b;
+    line-height:1.7;
+}
+
+.about-team-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:30px;
+}
+
+.team-card{
+    background:#f8fafc;
+    border:1px solid #e5e7eb;
+    border-radius:18px;
+    padding:35px;
+    text-align:center;
+    transition:.3s;
+}
+
+.team-card:hover{
+    transform:translateY(-8px);
+    box-shadow:0 25px 60px rgba(0,0,0,.08);
+}
+
+.team-icon{
+    width:60px;
+    height:60px;
+    margin:0 auto 22px;
+    border-radius:50%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    background:rgba(249,115,22,.1);
+}
+
+.team-icon svg{
+    width:26px;
+    height:26px;
+    color:#F97316;
+}
+
+.team-card h3{
+    font-size:1.15rem;
+    margin-bottom:10px;
+}
+
+.team-card p{
+    color:#64748b;
+    font-size:.92rem;
+    line-height:1.6;
+}
+
+/* ======================================================
+                    RESPONSIVO
+====================================================== */
+
+@media(max-width:900px){
+
+    .page-hero h1{
+        font-size:2.2rem;
+    }
+
+    .about-story-grid{
+        grid-template-columns:1fr;
+        gap:40px;
+    }
+
+    .about-story-image img{
+        height:280px;
+    }
+
+    .about-stats-grid{
+        grid-template-columns:repeat(2, 1fr);
+        gap:40px 20px;
+    }
+
+    .about-values-header h2,
+    .about-team-header h2{
+        font-size:2rem;
+    }
+}
+
+@media(max-width:600px){
+
+    .about-stats-grid{
+        grid-template-columns:1fr;
+    }
+}

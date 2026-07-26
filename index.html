@@ -48,7 +48,10 @@
 ====================================================== -->
 
 
-<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="css/base.css">
+<link rel="stylesheet" href="css/header.css">
+<link rel="stylesheet" href="css/footer.css">
+<link rel="stylesheet" href="css/pages/home.css">
 
 
 
@@ -77,18 +80,18 @@
             <ul class="nav-list">
 
                 <li class="nav-item">
-                    <a href="#hero" class="nav-link active">Home</a>
+                    <a href="#hero" class="nav-link active" data-i18n="nav.home">Home</a>
                 </li>
 
                 <li class="nav-item">
-                    <a href="#about" class="nav-link">Sobre</a>
+                    <a href="sobre.html" class="nav-link" data-i18n="nav.about">Sobre</a>
                 </li>
 
                 <!-- MEGA MENU -->
                 <li class="nav-item dropdown">
 
-                    <a href="#services" class="nav-link dropdown-toggle" aria-haspopup="true">
-                        Soluções
+                    <a href="servicos.html" class="nav-link dropdown-toggle" aria-haspopup="true">
+                        <span data-i18n="nav.solutions">Soluções</span>
                         <span class="dropdown-icon">⌄</span>
                     </a>
 
@@ -97,21 +100,21 @@
 
                             <!-- COLUNA ESQUERDA -->
                             <div class="mega-introduction">
-                                <h2>Tecnologia para <strong>transformar negócios.</strong></h2>
-                                <p>Desenvolvemos soluções digitais, infraestrutura tecnológica e inovação para empresas que procuram crescer.</p>
-                                <a href="#contact" class="mega-button">Falar com especialista →</a>
+                                <h2 data-i18n-html="megamenu.title">Tecnologia para <strong>transformar negócios.</strong></h2>
+                                <p data-i18n="megamenu.desc">Desenvolvemos soluções digitais, infraestrutura tecnológica e inovação para empresas que procuram crescer.</p>
+                                <a href="#contact" class="mega-button" data-i18n="megamenu.cta">Falar com especialista →</a>
                             </div>
 
                             <!-- COLUNA DIREITA -->
                             <div class="mega-services">
-                                <a href="#"><span>01</span>Consultoria Tecnológica</a>
-                                <a href="#"><span>02</span>Desenvolvimento Web</a>
-                                <a href="#"><span>03</span>Cibersegurança</a>
-                                <a href="#"><span>04</span>Redes e Infraestrutura</a>
-                                <a href="#"><span>05</span>Cloud Computing</a>
-                                <a href="#"><span>06</span>Automação Empresarial</a>
-                                <a href="#"><span>07</span>Inteligência Artificial</a>
-                                <a href="#"><span>08</span>RFID e Gestão de Inventário</a>
+                                <a href="servicos.html#consultoria-tecnologica"><span>01</span><span data-i18n="megamenu.service1">Consultoria Tecnológica</span></a>
+                                <a href="servicos.html#desenvolvimento-web"><span>02</span><span data-i18n="megamenu.service2">Desenvolvimento Web</span></a>
+                                <a href="servicos.html#ciberseguranca"><span>03</span><span data-i18n="megamenu.service3">Cibersegurança</span></a>
+                                <a href="servicos.html#redes-infraestrutura"><span>04</span><span data-i18n="megamenu.service4">Redes e Infraestrutura</span></a>
+                                <a href="servicos.html#cloud-computing"><span>05</span><span data-i18n="megamenu.service5">Cloud Computing</span></a>
+                                <a href="servicos.html#automacao-empresarial"><span>06</span><span data-i18n="megamenu.service6">Automação Empresarial</span></a>
+                                <a href="servicos.html#inteligencia-artificial"><span>07</span><span data-i18n="megamenu.service7">Inteligência Artificial</span></a>
+                                <a href="servicos.html#rfid-inventario"><span>08</span><span data-i18n="megamenu.service8">RFID e Gestão de Inventário</span></a>
                             </div>
 
                         </div>
@@ -120,15 +123,15 @@
                 </li>
 
                 <li class="nav-item">
-                    <a href="#projects" class="nav-link">Projetos</a>
+                    <a href="projetos.html" class="nav-link" data-i18n="nav.projects">Projetos</a>
                 </li>
 
                 <li class="nav-item">
-                    <a href="#blog" class="nav-link">Blog</a>
+                    <a href="#blog" class="nav-link" data-i18n="nav.blog">Blog</a>
                 </li>
 
                 <li class="nav-item">
-                    <a href="#contact" class="nav-link">Contacto</a>
+                    <a href="#contact" class="nav-link" data-i18n="nav.contact">Contacto</a>
                 </li>
 
             </ul>
@@ -153,7 +156,7 @@
 
             </div>
 
-            <a href="#contact" class="header-button">Fale Connosco</a>
+            <a href="#contact" class="header-button" data-i18n="header.cta">Fale Connosco</a>
 
         </div>
 
@@ -199,10 +202,10 @@
             <div class="overlay"></div>
 
             <div class="content">
-                <span class="tag">DIGITAL • INNOVATION • AI</span>
-                <h1>Transformamos ideias em soluções digitais</h1>
-                <p>Tecnologia, inovação e performance para empresas modernas.</p>
-                <a href="#services" class="btn-primary">Explorar Serviços</a>
+                <span class="tag" data-i18n="hero.slide1.tag">DIGITAL • INNOVATION • AI</span>
+                <h1 data-i18n="hero.slide1.title">Transformamos ideias em soluções digitais</h1>
+                <p data-i18n="hero.slide1.desc">Tecnologia, inovação e performance para empresas modernas.</p>
+                <a href="#services" class="btn-primary" data-i18n="hero.slide1.cta">Explorar Serviços</a>
             </div>
         </div>
 
@@ -211,10 +214,10 @@
             <div class="overlay"></div>
 
             <div class="content">
-                <span class="tag">AUTOMATION • DATA • AI</span>
-                <h1>Automação e Inteligência Empresarial</h1>
-                <p>Soluções inteligentes para otimizar processos e resultados.</p>
-                <a href="#products" class="btn-primary">Ver Soluções</a>
+                <span class="tag" data-i18n="hero.slide2.tag">AUTOMATION • DATA • AI</span>
+                <h1 data-i18n="hero.slide2.title">Automação e Inteligência Empresarial</h1>
+                <p data-i18n="hero.slide2.desc">Soluções inteligentes para otimizar processos e resultados.</p>
+                <a href="#products" class="btn-primary" data-i18n="hero.slide2.cta">Ver Soluções</a>
             </div>
         </div>
 
@@ -223,10 +226,10 @@
             <div class="overlay"></div>
 
             <div class="content">
-                <span class="tag">WEB • SYSTEMS • GROWTH</span>
-                <h1>Inovação que gera crescimento real</h1>
-                <p>Desenvolvimento web, marketing e sistemas empresariais.</p>
-                <a href="#contact" class="btn-primary">Falar Connosco</a>
+                <span class="tag" data-i18n="hero.slide3.tag">WEB • SYSTEMS • GROWTH</span>
+                <h1 data-i18n="hero.slide3.title">Inovação que gera crescimento real</h1>
+                <p data-i18n="hero.slide3.desc">Desenvolvimento web, marketing e sistemas empresariais.</p>
+                <a href="#contact" class="btn-primary" data-i18n="hero.slide3.cta">Falar Connosco</a>
             </div>
         </div>
 
@@ -1583,7 +1586,8 @@
     <script>lucide.createIcons();</script>
 
     <!-- APP -->
-    <script src="script.js"></script>
+    <script src="js/header.js"></script>
+    <script src="js/pages/home.js"></script>
 
 <div class="menu-overlay"></div>
 

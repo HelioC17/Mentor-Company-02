@@ -1,0 +1,72 @@
+/* ======================================================
+   BASE.CSS — Reset, tipografia, container, botões globais
+   Usado em: TODAS as páginas
+====================================================== */
+
+/* ======================================================
+                        BASE
+====================================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Inter', Arial, sans-serif;
+    color: #1e293b;
+    background: #050B1F;
+    overflow-x: hidden;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+section {
+    padding: 80px 0;
+}
+
+
+/* ======================================================
+                    CONTAINER
+====================================================== */
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+
+/* ======================================================
+                    BUTTONS
+====================================================== */
+
+.btn-primary {
+    display: inline-block;
+    padding: 14px 28px;
+    border-radius: 8px;
+    background: #F97316;
+    color: #fff;
+    font-size: 15px;
+    transition: .3s;
+}
+
+.btn-primary:hover {
+    transform: translateY(-3px);
+    background: #C1121F;
+}
+
+

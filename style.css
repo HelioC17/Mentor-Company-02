@@ -447,8 +447,15 @@ section {
         display:block;
     }
 
-    .header-actions{
+    .header-button{
         display:none;
+    }
+
+    /* Seletor de idioma junto ao hamburguer, em vez de ficar a meio do header */
+    .header-actions{
+        margin-left:auto;
+        margin-right:14px;
+        gap:0;
     }
 
     .nav-list{

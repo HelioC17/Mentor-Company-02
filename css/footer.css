@@ -1,0 +1,189 @@
+/* ======================================================
+   FOOTER.CSS — Rodapé e CTA final
+   Usado em: TODAS as páginas
+====================================================== */
+
+/* ==========================================
+FOOTER
+========================================== */
+
+.footer{
+    background:
+    linear-gradient(
+        180deg,
+        #071426,
+        #030712
+    );
+    padding:90px 0 30px;
+    border-top:
+    1px solid rgba(255,255,255,.08);
+}
+
+.footer-grid{
+    display:grid;
+    grid-template-columns:
+    1.5fr 1fr 1fr 1.2fr;
+    gap:50px;
+}
+
+/* LOGO */
+.footer-logo{
+    font-size:2rem;
+    font-weight:800;
+    margin-bottom:20px;
+}
+
+.footer-logo span{
+    color:white;
+}
+
+.footer-logo strong{
+    color:#F97316;
+}
+
+.footer-brand p{
+    color:#94A3B8;
+    line-height:1.8;
+    max-width:320px;
+}
+
+/* SOCIAL */
+.footer-social{
+    display:flex;
+    gap:15px;
+    margin-top:30px;
+}
+
+.footer-social a{
+    width:42px;
+    height:42px;
+    border-radius:50%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    background:
+    rgba(255,255,255,.08);
+    color:white;
+    transition:.3s;
+}
+
+.footer-social svg{
+    width:18px;
+}
+
+.footer-social a:hover{
+    background:#F97316;
+    transform:translateY(-4px);
+}
+
+/* COLUMNS */
+.footer-column h3{
+    color:white;
+    font-size:1.1rem;
+    margin-bottom:25px;
+}
+
+.footer-column ul{
+    list-style:none;
+    padding:0;
+}
+
+.footer-column li{
+    margin-bottom:15px;
+}
+
+.footer-column a{
+    color:#94A3B8;
+    text-decoration:none;
+    transition:.3s;
+}
+
+.footer-column a:hover{
+    color:#F97316;
+}
+
+/* CONTACT */
+.footer-contact p{
+    display:flex;
+    align-items:center;
+    gap:12px;
+    color:#94A3B8;
+}
+
+.footer-contact svg{
+    width:18px;
+    color:#F97316;
+}
+
+/* CTA */
+.footer-cta{
+    margin-top:70px;
+    padding:35px 45px;
+    border-radius:20px;
+    background:
+    linear-gradient(
+        120deg,
+        rgba(249,115,22,.15),
+        rgba(255,255,255,.03)
+    );
+    border:
+    1px solid rgba(255,255,255,.08);
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.footer-cta h2{
+    color:white;
+    margin-bottom:10px;
+}
+
+.footer-cta p{
+    color:#94A3B8;
+}
+
+.footer-cta a{
+    background:#F97316;
+    color:white;
+    padding:14px 30px;
+    border-radius:8px;
+    text-decoration:none;
+    font-weight:600;
+}
+
+/* BOTTOM */
+.footer-bottom{
+    margin-top:50px;
+    padding-top:25px;
+    border-top:
+    1px solid rgba(255,255,255,.08);
+    display:flex;
+    justify-content:space-between;
+    color:#64748B;
+    font-size:.9rem;
+}
+
+.footer-bottom div{
+    display:flex;
+    gap:25px;
+}
+
+@media(max-width:900px){
+
+    .footer-grid{
+        grid-template-columns:1fr;
+    }
+
+    .footer-cta{
+        flex-direction:column;
+        gap:25px;
+        text-align:center;
+    }
+
+    .footer-bottom{
+        flex-direction:column;
+        gap:20px;
+        text-align:center;
+    }
+}
+
