@@ -1,0 +1,378 @@
+/* ======================================================
+   CONTACTO.CSS — Imagem + cartão de mensagem + contactos
+   Usado em: APENAS contacto.html
+   (tema claro, sem navy escuro, conforme pedido)
+====================================================== */
+
+/* ======================================================
+                    CABEÇALHO DE SECÇÃO
+====================================================== */
+
+.section-header{
+    max-width:600px;
+    margin:0 auto 60px;
+    text-align:center;
+}
+
+.section-header .subtitle{
+    display:inline-block;
+    color:#F97316;
+    font-size:.8rem;
+    letter-spacing:4px;
+    font-weight:700;
+    margin-bottom:18px;
+}
+
+.section-header h2{
+    color:#0f172a;
+    font-size:2.2rem;
+}
+
+/* ======================================================
+            IMAGEM + CARTÃO DE MENSAGEM
+====================================================== */
+
+.contact-main{
+    background:#ffffff;
+    padding:110px 0;
+}
+
+.contact-grid{
+    display:grid;
+    grid-template-columns:.9fr 1.1fr;
+    gap:60px;
+    align-items:stretch;
+}
+
+.contact-image{
+    border-radius:24px;
+    overflow:hidden;
+    min-height:100%;
+}
+
+.contact-image img{
+    width:100%;
+    height:100%;
+    min-height:480px;
+    object-fit:cover;
+}
+
+.contact-card{
+    background:#f8fafc;
+    border:1px solid #e5e7eb;
+    border-radius:24px;
+    padding:48px;
+}
+
+.contact-card .subtitle{
+    display:inline-block;
+    color:#F97316;
+    font-size:.8rem;
+    letter-spacing:4px;
+    font-weight:700;
+    margin-bottom:14px;
+}
+
+.contact-card h2{
+    color:#0f172a;
+    font-size:1.8rem;
+    margin-bottom:30px;
+}
+
+/* ======================================================
+                    FORMULÁRIO
+====================================================== */
+
+.contact-form{
+    display:flex;
+    flex-direction:column;
+    gap:22px;
+}
+
+.form-row{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:18px;
+}
+
+.form-field{
+    display:flex;
+    flex-direction:column;
+    gap:8px;
+}
+
+.form-field label{
+    font-size:.85rem;
+    font-weight:600;
+    color:#334155;
+}
+
+.form-field input,
+.form-field select,
+.form-field textarea{
+    padding:13px 16px;
+    border-radius:10px;
+    border:1px solid #e2e8f0;
+    background:#ffffff;
+    font-family:inherit;
+    font-size:.95rem;
+    color:#0f172a;
+}
+
+.form-field textarea{
+    resize:vertical;
+    min-height:120px;
+}
+
+.form-field input:focus,
+.form-field select:focus,
+.form-field textarea:focus{
+    outline:none;
+    border-color:#F97316;
+    box-shadow:0 0 0 3px rgba(249,115,22,.15);
+}
+
+/* ======================================================
+        SELETOR DE MODO (FAQ / SERVIÇO / ABERTA)
+====================================================== */
+
+.mode-select{
+    display:flex;
+    flex-direction:column;
+    gap:10px;
+}
+
+.mode-label{
+    font-size:.85rem;
+    font-weight:600;
+    color:#334155;
+}
+
+.mode-options{
+    display:flex;
+    flex-wrap:wrap;
+    gap:10px;
+}
+
+.mode-btn{
+    padding:10px 18px;
+    border-radius:999px;
+    border:1px solid #e2e8f0;
+    background:#ffffff;
+    color:#475569;
+    font-size:.85rem;
+    font-weight:600;
+    font-family:inherit;
+    cursor:pointer;
+    transition:.25s;
+}
+
+.mode-btn:hover{
+    border-color:#F97316;
+    color:#F97316;
+}
+
+.mode-btn.active{
+    background:#0f172a;
+    border-color:#0f172a;
+    color:#ffffff;
+}
+
+/* ======================================================
+                    SUGESTÕES (CHIPS)
+====================================================== */
+
+.suggestions{
+    display:flex;
+    flex-direction:column;
+    gap:10px;
+    padding:16px;
+    background:#fff7ed;
+    border:1px dashed #fdba74;
+    border-radius:14px;
+}
+
+.suggestions-label{
+    font-size:.8rem;
+    font-weight:600;
+    color:#c2410c;
+}
+
+.suggestions-list{
+    display:flex;
+    flex-wrap:wrap;
+    gap:8px;
+}
+
+.suggestion-chip{
+    padding:9px 16px;
+    border-radius:999px;
+    border:1px solid #fdba74;
+    background:#ffffff;
+    color:#334155;
+    font-size:.85rem;
+    font-family:inherit;
+    cursor:pointer;
+    transition:.25s;
+    text-align:left;
+}
+
+.suggestion-chip:hover{
+    background:#F97316;
+    border-color:#F97316;
+    color:#ffffff;
+}
+
+/* ======================================================
+                FEEDBACK DO FORMULÁRIO
+====================================================== */
+
+.form-feedback{
+    font-size:.9rem;
+    font-weight:600;
+    min-height:1.2em;
+}
+
+.form-feedback.success{
+    color:#16A34A;
+}
+
+.form-feedback.error{
+    color:#DC2626;
+}
+
+/* ======================================================
+                    OS NOSSOS CONTACTOS
+====================================================== */
+
+.contact-info{
+    background:#f8fafc;
+    padding:110px 0;
+    border-top:1px solid #f1f5f9;
+}
+
+.contact-info-grid{
+    display:grid;
+    grid-template-columns:repeat(4, 1fr);
+    gap:26px;
+    margin-bottom:50px;
+}
+
+.info-card{
+    background:#ffffff;
+    border:1px solid #e5e7eb;
+    border-radius:18px;
+    padding:32px 26px;
+    text-align:center;
+    transition:.3s;
+}
+
+.info-card:hover{
+    transform:translateY(-6px);
+    box-shadow:0 20px 45px rgba(15,23,42,.08);
+    border-color:#fdba74;
+}
+
+.info-icon{
+    width:52px;
+    height:52px;
+    margin:0 auto 18px;
+    border-radius:14px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    background:rgba(249,115,22,.1);
+}
+
+.info-icon svg{
+    width:22px;
+    height:22px;
+    color:#F97316;
+}
+
+.info-card h3{
+    color:#0f172a;
+    font-size:1rem;
+    margin-bottom:8px;
+}
+
+.info-card p{
+    color:#64748b;
+    font-size:.92rem;
+}
+
+.info-card p a{
+    color:#64748b;
+    transition:.25s;
+}
+
+.info-card p a:hover{
+    color:#F97316;
+}
+
+.social-row{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:16px;
+    color:#64748b;
+    font-size:.9rem;
+}
+
+.social-row a{
+    width:40px;
+    height:40px;
+    border-radius:50%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    background:#ffffff;
+    border:1px solid #e5e7eb;
+    color:#475569;
+    transition:.3s;
+}
+
+.social-row a:hover{
+    background:#F97316;
+    border-color:#F97316;
+    color:#ffffff;
+    transform:translateY(-3px);
+}
+
+/* ======================================================
+                    RESPONSIVO
+====================================================== */
+
+@media(max-width:1000px){
+
+    .contact-grid{
+        grid-template-columns:1fr;
+    }
+
+    .contact-image img{
+        min-height:280px;
+    }
+
+    .contact-info-grid{
+        grid-template-columns:repeat(2, 1fr);
+    }
+}
+
+@media(max-width:600px){
+
+    .contact-card{
+        padding:32px 24px;
+    }
+
+    .form-row{
+        grid-template-columns:1fr;
+    }
+
+    .contact-info-grid{
+        grid-template-columns:1fr;
+    }
+
+    .section-header h2{
+        font-size:1.8rem;
+    }
+}

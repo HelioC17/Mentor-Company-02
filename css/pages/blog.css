@@ -1,0 +1,421 @@
+/* ======================================================
+   BLOG.CSS — Post em destaque, feed único, newsletter
+   Usado em: APENAS blog.html
+
+   Nota de design: a pedido do cliente, esta página evita
+   tons de azul/navy escuro (já muito presentes no resto do
+   site). Predomina o branco/cinza-claro, com laranja como
+   destaque principal e verde/âmbar só para diferenciar as
+   etiquetas de categoria.
+====================================================== */
+
+/* ======================================================
+                    CABEÇALHO DE SECÇÃO
+====================================================== */
+
+.section-header{
+    max-width:600px;
+    margin:0 auto 60px;
+    text-align:center;
+}
+
+.section-header .subtitle{
+    display:inline-block;
+    color:#F97316;
+    font-size:.8rem;
+    letter-spacing:4px;
+    font-weight:700;
+    margin-bottom:18px;
+}
+
+.section-header h2{
+    color:#0f172a;
+    font-size:2.4rem;
+}
+
+/* ======================================================
+                    ETIQUETAS DE CATEGORIA
+====================================================== */
+
+.post-tag{
+    display:inline-flex;
+    align-items:center;
+    font-size:.72rem;
+    font-weight:700;
+    letter-spacing:.5px;
+    text-transform:uppercase;
+    padding:6px 14px;
+    border-radius:999px;
+    color:#fff;
+}
+
+.tag-newsletter{ background:#F97316; }
+.tag-novidade{ background:#16A34A; }
+.tag-evento{ background:#D97706; }
+
+/* ======================================================
+                    POST EM DESTAQUE
+====================================================== */
+
+.blog-featured{
+    background:#f8fafc;
+    padding:80px 0 20px;
+}
+
+.featured-card{
+    display:grid;
+    grid-template-columns:1.1fr 1fr;
+    gap:0;
+    background:#ffffff;
+    border:1px solid #e5e7eb;
+    border-radius:24px;
+    overflow:hidden;
+    box-shadow:0 25px 60px rgba(15,23,42,.06);
+    transition:.35s;
+}
+
+.featured-card:hover{
+    transform:translateY(-6px);
+    box-shadow:0 35px 80px rgba(15,23,42,.1);
+}
+
+.featured-image{
+    height:100%;
+    min-height:340px;
+    overflow:hidden;
+}
+
+.featured-image img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    transition:.5s;
+}
+
+.featured-card:hover .featured-image img{
+    transform:scale(1.05);
+}
+
+.featured-content{
+    padding:50px;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+}
+
+.featured-content .post-tag{
+    align-self:flex-start;
+    margin-bottom:20px;
+}
+
+.featured-content h2{
+    color:#0f172a;
+    font-size:1.9rem;
+    line-height:1.25;
+    margin-bottom:16px;
+}
+
+.featured-content p{
+    color:#64748b;
+    line-height:1.75;
+    margin-bottom:26px;
+}
+
+.featured-meta{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    font-size:.9rem;
+    color:#64748b;
+}
+
+.featured-meta span{
+    display:flex;
+    align-items:center;
+    gap:8px;
+}
+
+.featured-meta svg{
+    width:16px;
+    height:16px;
+}
+
+.featured-link{
+    color:#F97316;
+    font-weight:600;
+}
+
+.featured-card:hover .featured-link{
+    gap:14px;
+}
+
+/* ======================================================
+                    FEED DE POSTS
+====================================================== */
+
+.blog-feed{
+    background:#f8fafc;
+    padding:80px 0 140px;
+}
+
+.blog-grid{
+    display:grid;
+    grid-template-columns:repeat(3, 1fr);
+    gap:34px;
+}
+
+.post-card{
+    background:#ffffff;
+    border:1px solid #e5e7eb;
+    border-radius:20px;
+    overflow:hidden;
+    transition:.35s;
+}
+
+.post-card:hover{
+    transform:translateY(-8px);
+    box-shadow:0 25px 55px rgba(15,23,42,.08);
+    border-color:#cbd5e1;
+}
+
+.post-image{
+    position:relative;
+    height:200px;
+    overflow:hidden;
+}
+
+.post-image img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    transition:.5s;
+}
+
+.post-card:hover .post-image img{
+    transform:scale(1.06);
+}
+
+.post-image .post-tag{
+    position:absolute;
+    top:16px;
+    left:16px;
+    z-index:2;
+}
+
+/* selo de data para eventos (dia/mês) */
+.post-date-badge{
+    position:absolute;
+    top:16px;
+    right:16px;
+    z-index:2;
+    background:#ffffff;
+    border-radius:12px;
+    padding:8px 12px;
+    text-align:center;
+    line-height:1.1;
+    box-shadow:0 8px 20px rgba(0,0,0,.15);
+}
+
+.post-date-badge .day{
+    display:block;
+    font-size:1.15rem;
+    font-weight:800;
+    color:#0f172a;
+}
+
+.post-date-badge .month{
+    display:block;
+    font-size:.68rem;
+    font-weight:700;
+    letter-spacing:1px;
+    color:#D97706;
+}
+
+.post-content{
+    padding:26px;
+}
+
+.post-date{
+    display:flex;
+    align-items:center;
+    gap:8px;
+    font-size:.82rem;
+    color:#94a3b8;
+    margin-bottom:12px;
+}
+
+.post-date svg{
+    width:14px;
+    height:14px;
+}
+
+.post-content h3{
+    color:#0f172a;
+    font-size:1.15rem;
+    line-height:1.35;
+    margin-bottom:12px;
+}
+
+.post-content p{
+    color:#64748b;
+    font-size:.92rem;
+    line-height:1.65;
+    margin-bottom:18px;
+}
+
+.post-link{
+    display:inline-flex;
+    align-items:center;
+    gap:8px;
+    color:#F97316;
+    font-weight:600;
+    font-size:.92rem;
+    transition:.3s;
+}
+
+.post-link svg{
+    width:15px;
+    height:15px;
+}
+
+.post-card:hover .post-link{
+    gap:12px;
+}
+
+/* ======================================================
+                SUBSCREVER NEWSLETTER
+====================================================== */
+
+.newsletter-cta{
+    background:linear-gradient(135deg, #FFF7ED, #ffffff);
+    padding:110px 0;
+    border-top:1px solid #f1f5f9;
+}
+
+.newsletter-inner{
+    max-width:640px;
+    margin:0 auto;
+    text-align:center;
+}
+
+.newsletter-text .subtitle{
+    display:inline-block;
+    color:#F97316;
+    font-size:.8rem;
+    letter-spacing:4px;
+    font-weight:700;
+    margin-bottom:18px;
+}
+
+.newsletter-text h2{
+    color:#0f172a;
+    font-size:2.2rem;
+    margin-bottom:16px;
+}
+
+.newsletter-text p{
+    color:#64748b;
+    margin-bottom:36px;
+}
+
+.newsletter-form{
+    display:flex;
+    gap:12px;
+}
+
+.newsletter-form input{
+    flex:1;
+    padding:16px 22px;
+    border-radius:10px;
+    border:1px solid #e2e8f0;
+    background:#ffffff;
+    font-size:.95rem;
+    font-family:inherit;
+    color:#0f172a;
+}
+
+.newsletter-form input:focus{
+    outline:none;
+    border-color:#F97316;
+    box-shadow:0 0 0 3px rgba(249,115,22,.15);
+}
+
+.newsletter-form button{
+    padding:16px 30px;
+    border:none;
+    border-radius:10px;
+    background:#F97316;
+    color:#fff;
+    font-weight:600;
+    font-size:.95rem;
+    font-family:inherit;
+    cursor:pointer;
+    transition:.3s;
+    white-space:nowrap;
+}
+
+.newsletter-form button:hover{
+    background:#C2410C;
+    transform:translateY(-2px);
+}
+
+.newsletter-feedback{
+    margin-top:18px;
+    font-size:.9rem;
+    font-weight:600;
+    min-height:1.2em;
+}
+
+.newsletter-feedback.success{
+    color:#16A34A;
+}
+
+.newsletter-feedback.error{
+    color:#DC2626;
+}
+
+/* ======================================================
+                    RESPONSIVO
+====================================================== */
+
+@media(max-width:1000px){
+
+    .blog-grid{
+        grid-template-columns:repeat(2, 1fr);
+    }
+
+    .featured-card{
+        grid-template-columns:1fr;
+    }
+
+    .featured-image{
+        min-height:260px;
+    }
+}
+
+@media(max-width:600px){
+
+    .blog-grid{
+        grid-template-columns:1fr;
+    }
+
+    .featured-content{
+        padding:34px 28px;
+    }
+
+    .featured-content h2{
+        font-size:1.5rem;
+    }
+
+    .section-header h2{
+        font-size:1.9rem;
+    }
+
+    .newsletter-text h2{
+        font-size:1.7rem;
+    }
+
+    .newsletter-form{
+        flex-direction:column;
+    }
+}
