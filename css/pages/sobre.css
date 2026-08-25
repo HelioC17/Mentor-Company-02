@@ -1,19 +1,54 @@
 /* ======================================================
-   SOBRE.CSS — Banner, história, valores, números, equipa
+   SOBRE.CSS — História, valores, números e equipa
    Usado em: APENAS sobre.html
 
-   Nota: o banner de topo (.page-hero, .breadcrumb) já não
-   está aqui — foi movido para css/page-hero.css, partilhado
-   com outras páginas internas (ex: servicos.html).
+   Nota de design: paleta predominantemente branca/clara,
+   com o navy escuro reservado só ao banner de topo
+   (partilhado com as outras páginas em page-hero.css).
 ====================================================== */
+
+/* ======================================================
+                    CABEÇALHOS DE SECÇÃO
+====================================================== */
+
+.about-values-header,
+.about-team-header{
+    max-width:600px;
+    margin:0 auto 56px;
+    text-align:center;
+}
+
+.about-values-header .subtitle,
+.about-team-header .subtitle{
+    display:inline-block;
+    color:#F97316;
+    font-size:.8rem;
+    letter-spacing:4px;
+    font-weight:700;
+    margin-bottom:16px;
+}
+
+.about-values-header h2,
+.about-team-header h2{
+    color:#0f172a;
+    font-size:2.4rem;
+    line-height:1.2;
+}
+
+.about-team-header p{
+    color:#64748b;
+    font-size:1.02rem;
+    line-height:1.7;
+    margin-top:16px;
+}
 
 /* ======================================================
                     A NOSSA HISTÓRIA
 ====================================================== */
 
 .about-story{
-    background:#050B1F;
-    padding:120px 0;
+    background:#ffffff;
+    padding:110px 0 0;
 }
 
 .about-story-grid{
@@ -21,6 +56,7 @@
     grid-template-columns:1fr 1fr;
     gap:80px;
     align-items:center;
+    margin-bottom:80px;
 }
 
 .about-story-image{
@@ -44,22 +80,60 @@
 }
 
 .about-story-text h2{
-    color:#fff;
-    font-size:2.4rem;
-    line-height:1.25;
+    color:#0f172a;
+    font-size:2.3rem;
+    line-height:1.28;
     margin-bottom:22px;
 }
 
 .about-story-text p{
-    color:#94A3B8;
-    font-size:1.05rem;
+    color:#64748b;
+    font-size:1.02rem;
     line-height:1.8;
     margin-bottom:18px;
-    max-width:560px;
+    max-width:520px;
 }
 
 .about-story-text .btn-primary{
-    margin-top:12px;
+    margin-top:14px;
+}
+
+/* NÚMEROS — faixa alinhada dentro da secção história,
+   em vez de uma secção escura à parte */
+.about-stats-inline{
+    display:flex;
+    align-items:center;
+    border-top:1px solid #e5e7eb;
+    padding:48px 0;
+}
+
+.about-stat{
+    flex:1;
+    text-align:center;
+}
+
+.about-stat h3{
+    font-family:ui-monospace, SFMono-Regular, Menlo, Consolas, "Liberation Mono", monospace;
+    color:#0f172a;
+    font-size:2.4rem;
+    font-weight:700;
+    margin-bottom:8px;
+}
+
+.about-stat h3 .counter{
+    color:#F97316;
+}
+
+.about-stat p{
+    color:#64748b;
+    font-size:.88rem;
+}
+
+.about-stat-divider{
+    width:1px;
+    height:48px;
+    background:#e5e7eb;
+    flex-shrink:0;
 }
 
 /* ======================================================
@@ -67,103 +141,60 @@
 ====================================================== */
 
 .about-values{
-    background:#071324;
-    padding:120px 0;
-}
-
-.about-values-header{
-    text-align:center;
-    max-width:650px;
-    margin:0 auto 60px;
-}
-
-.about-values-header .subtitle{
-    display:inline-block;
-    color:#F97316;
-    font-size:.8rem;
-    letter-spacing:4px;
-    font-weight:700;
-    margin-bottom:18px;
-}
-
-.about-values-header h2{
-    color:#fff;
-    font-size:2.6rem;
+    background:#f8fafc;
+    padding:100px 0;
+    border-top:1px solid #f1f5f9;
+    border-bottom:1px solid #f1f5f9;
 }
 
 .about-values-grid{
     display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
-    gap:30px;
+    grid-template-columns:repeat(3, 1fr);
+    gap:28px;
 }
 
 .value-card{
-    background:#0D1B2A;
-    border:1px solid rgba(255,255,255,.08);
+    background:#ffffff;
+    border:1px solid #e5e7eb;
     border-radius:18px;
-    padding:40px;
-    transition:.35s;
+    padding:38px;
+    text-align:center;
+    transition:.3s;
 }
 
 .value-card:hover{
-    transform:translateY(-8px);
-    border-color:#F97316;
+    transform:translateY(-6px);
+    box-shadow:0 20px 45px rgba(15,23,42,.08);
+    border-color:#fdba74;
 }
 
 .value-icon{
-    width:60px;
-    height:60px;
+    width:58px;
+    height:58px;
+    margin:0 auto 24px;
     border-radius:16px;
     display:flex;
     align-items:center;
     justify-content:center;
-    background:rgba(249,115,22,.12);
-    margin-bottom:28px;
+    background:rgba(249,115,22,.1);
 }
 
 .value-icon svg{
-    width:28px;
-    height:28px;
+    width:26px;
+    height:26px;
     color:#F97316;
 }
 
 .value-card h3{
-    color:#fff;
-    font-size:1.4rem;
+    color:#0f172a;
+    font-size:1.25rem;
     margin-bottom:14px;
 }
 
 .value-card p{
-    color:#94A3B8;
-    line-height:1.8;
-}
-
-/* ======================================================
-                NÚMEROS QUE NOS DEFINEM
-====================================================== */
-
-.about-stats{
-    background:#050B1F;
-    padding:100px 0;
-}
-
-.about-stats-grid{
-    display:grid;
-    grid-template-columns:repeat(4, 1fr);
-    gap:30px;
-    text-align:center;
-}
-
-.about-stat h3{
-    font-size:3rem;
-    font-weight:700;
-    color:#F97316;
-    margin-bottom:10px;
-}
-
-.about-stat p{
-    color:#CBD5E1;
-    font-size:1rem;
+    color:#64748b;
+    line-height:1.75;
+    font-size:.95rem;
 }
 
 /* ======================================================
@@ -172,60 +203,35 @@
 
 .about-team{
     background:#ffffff;
-    padding:120px 0;
-    color:#0f172a;
-}
-
-.about-team-header{
-    text-align:center;
-    max-width:650px;
-    margin:0 auto 60px;
-}
-
-.about-team-header .subtitle{
-    display:inline-block;
-    color:#F97316;
-    font-size:.8rem;
-    letter-spacing:4px;
-    font-weight:700;
-    margin-bottom:18px;
-}
-
-.about-team-header h2{
-    font-size:2.6rem;
-    margin-bottom:18px;
-}
-
-.about-team-header p{
-    color:#64748b;
-    line-height:1.7;
+    padding:100px 0 120px;
 }
 
 .about-team-grid{
     display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
-    gap:30px;
+    grid-template-columns:repeat(4, 1fr);
+    gap:24px;
 }
 
 .team-card{
-    background:#f8fafc;
+    background:#ffffff;
     border:1px solid #e5e7eb;
     border-radius:18px;
-    padding:35px;
+    padding:32px 26px;
     text-align:center;
     transition:.3s;
 }
 
 .team-card:hover{
-    transform:translateY(-8px);
-    box-shadow:0 25px 60px rgba(0,0,0,.08);
+    transform:translateY(-6px);
+    box-shadow:0 20px 45px rgba(15,23,42,.08);
+    border-color:#fdba74;
 }
 
 .team-icon{
-    width:60px;
-    height:60px;
-    margin:0 auto 22px;
-    border-radius:50%;
+    width:52px;
+    height:52px;
+    margin:0 auto 20px;
+    border-radius:14px;
     display:flex;
     align-items:center;
     justify-content:center;
@@ -233,19 +239,20 @@
 }
 
 .team-icon svg{
-    width:26px;
-    height:26px;
+    width:24px;
+    height:24px;
     color:#F97316;
 }
 
 .team-card h3{
-    font-size:1.15rem;
+    color:#0f172a;
+    font-size:1.05rem;
     margin-bottom:10px;
 }
 
 .team-card p{
     color:#64748b;
-    font-size:.92rem;
+    font-size:.88rem;
     line-height:1.6;
 }
 
@@ -253,11 +260,7 @@
                     RESPONSIVO
 ====================================================== */
 
-@media(max-width:900px){
-
-    .page-hero h1{
-        font-size:2.2rem;
-    }
+@media(max-width:1000px){
 
     .about-story-grid{
         grid-template-columns:1fr;
@@ -265,23 +268,46 @@
     }
 
     .about-story-image img{
-        height:280px;
+        height:300px;
     }
 
-    .about-stats-grid{
+    .about-stats-inline{
+        flex-wrap:wrap;
+        gap:32px 0;
+    }
+
+    .about-stat{
+        flex:1 1 45%;
+    }
+
+    .about-stat-divider{
+        display:none;
+    }
+
+    .about-values-grid{
+        grid-template-columns:1fr;
+        max-width:440px;
+        margin:0 auto;
+    }
+
+    .about-team-grid{
         grid-template-columns:repeat(2, 1fr);
-        gap:40px 20px;
-    }
-
-    .about-values-header h2,
-    .about-team-header h2{
-        font-size:2rem;
     }
 }
 
 @media(max-width:600px){
 
-    .about-stats-grid{
+    .about-story-text h2,
+    .about-values-header h2,
+    .about-team-header h2{
+        font-size:1.9rem;
+    }
+
+    .about-stat{
+        flex:1 1 100%;
+    }
+
+    .about-team-grid{
         grid-template-columns:1fr;
     }
 }

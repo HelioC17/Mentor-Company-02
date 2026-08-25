@@ -12,16 +12,16 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-<title>Sobre Nós | Mentor Company</title>
+<title id="pageTitle">Área | Mentor Company</title>
 
-<meta name="description" content="Conheça a Mentor Company: quem somos, a nossa missão e a equipa por trás das soluções tecnológicas para empresas em Angola.">
+<meta name="description" content="Conheça em detalhe uma das áreas de atuação da Mentor Company.">
 <meta name="keywords" content="tecnologia, desenvolvimento web, software, marketing digital, soluções empresariais, Angola, IT, consultoria">
 <meta name="author" content="MENTOR - PRESTAÇÃO DE SERVIÇOS, LDA">
 
 <meta name="robots" content="index, follow">
 <meta name="theme-color" content="#0F172A">
 
-<link rel="canonical" href="https://www.seudominio.com/sobre.html">
+<link rel="canonical" href="https://www.seudominio.com/area.html">
 
 <!-- ======================================================
                         FAVICON
@@ -52,7 +52,7 @@
 <link rel="stylesheet" href="css/header.css">
 <link rel="stylesheet" href="css/footer.css">
 <link rel="stylesheet" href="css/page-hero.css">
-<link rel="stylesheet" href="css/pages/sobre.css">
+<link rel="stylesheet" href="css/pages/area.css">
 
 
 
@@ -85,7 +85,7 @@
                 </li>
 
                 <li class="nav-item">
-                    <a href="sobre.html" class="nav-link active" data-i18n="nav.about">Sobre</a>
+                    <a href="sobre.html" class="nav-link" data-i18n="nav.about">Sobre</a>
                 </li>
 
                 <!-- MEGA MENU -->
@@ -179,198 +179,70 @@
 </header>
 
 <!-- ======================================================
-                    PAGE HERO (SOBRE)
+    PAGE HERO — conteúdo preenchido dinamicamente por JS
+    consoante o parâmetro ?id= na URL (ver js/pages/area.js)
 ====================================================== -->
 
-<section class="page-hero">
+<section class="page-hero" id="areaHero">
 
-    <img src="assets/images/Gemini_Generated_Image_td09rltd09rltd09.png" alt="" class="page-hero-bg">
+    <img src="" alt="" class="page-hero-bg" id="areaHeroImg">
     <div class="page-hero-overlay"></div>
 
     <div class="container page-hero-content">
-        <span class="tag">A EMPRESA</span>
-        <h1>Sobre a Mentor Company</h1>
-        <p>Tecnologia, consultoria e inovação ao serviço de empresas que querem crescer em Angola.</p>
+        <span class="tag" id="areaTag">ÁREA DE ATUAÇÃO</span>
+        <h1 id="areaTitle">A carregar...</h1>
+        <p id="areaSubtitle"></p>
 
         <nav class="breadcrumb" aria-label="Localização na página">
             <a href="index.html">Home</a>
             <span>/</span>
-            <span>Sobre</span>
+            <a href="index.html#areas">Áreas de atuação</a>
+            <span>/</span>
+            <span id="areaBreadcrumb"></span>
         </nav>
     </div>
 
 </section>
 
 <!-- ======================================================
-                    A NOSSA HISTÓRIA
+                    DESCRIÇÃO + O QUE INCLUI
 ====================================================== -->
 
-<section class="about-story">
+<section class="area-detail">
 
-    <div class="container about-story-grid">
+    <div class="container area-detail-grid">
 
-        <div class="about-story-image">
-            <img src="assets/images/business-colleagues-watching-content-laptop.png" alt="Equipa Mentor Company a trabalhar">
+        <div class="area-detail-text">
+            <span class="subtitle">SOBRE ESTA ÁREA</span>
+            <h2 id="areaHeading"></h2>
+            <p id="areaDescription"></p>
+
+            <h3>O que inclui</h3>
+            <ul class="area-detail-list" id="areaList"></ul>
+
+            <a href="contacto.html" class="btn-primary">Falar sobre esta área</a>
         </div>
 
-        <div class="about-story-text">
-
-            <span class="subtitle">QUEM SOMOS</span>
-
-            <h2>Construímos tecnologia com propósito, não apenas software.</h2>
-
-            <p>
-                A Mentor Company nasceu para ajudar empresas angolanas a atravessar a
-                transformação digital com confiança. Combinamos consultoria estratégica,
-                desenvolvimento de software e automação para resolver problemas reais —
-                não para vender tecnologia pela tecnologia.
-            </p>
-
-            <p>
-                Trabalhamos lado a lado com cada cliente, desde o diagnóstico inicial até
-                à entrega e ao suporte contínuo, para garantir que cada solução gera
-                impacto mensurável no negócio.
-            </p>
-
-            <a href="contacto.html" class="btn-primary">Falar com a nossa equipa</a>
-
-        </div>
-
-    </div>
-
-    <!-- NÚMEROS — integrados como faixa alinhada, não uma secção à parte -->
-    <div class="container">
-        <div class="about-stats-inline">
-
-            <div class="about-stat">
-                <h3><span class="counter" data-target="73">0</span>+</h3>
-                <p>Projetos Desenvolvidos</p>
-            </div>
-
-            <div class="about-stat-divider"></div>
-
-            <div class="about-stat">
-                <h3><span class="counter" data-target="35">0</span>+</h3>
-                <p>Clientes Atendidos</p>
-            </div>
-
-            <div class="about-stat-divider"></div>
-
-            <div class="about-stat">
-                <h3><span class="counter" data-target="10">0</span>+</h3>
-                <p>Parceiros Estratégicos</p>
-            </div>
-
-            <div class="about-stat-divider"></div>
-
-            <div class="about-stat">
-                <h3><span class="counter" data-target="4">0</span>+</h3>
-                <p>Anos de Experiência</p>
-            </div>
-
-        </div>
-    </div>
-
-</section>
-
-<!-- ======================================================
-                MISSÃO, VISÃO E VALORES
-====================================================== -->
-
-<section class="about-values">
-
-    <div class="container">
-
-        <div class="about-values-header">
-            <span class="subtitle">O QUE NOS GUIA</span>
-            <h2>Missão, visão e valores</h2>
-        </div>
-
-        <div class="about-values-grid">
-
-            <article class="value-card">
-                <div class="value-icon">
-                    <i data-lucide="target"></i>
-                </div>
-                <h3>Missão</h3>
-                <p>
-                    Simplificar a adoção de tecnologia nas empresas angolanas,
-                    entregando soluções práticas que geram resultado desde o primeiro dia.
-                </p>
-            </article>
-
-            <article class="value-card">
-                <div class="value-icon">
-                    <i data-lucide="eye"></i>
-                </div>
-                <h3>Visão</h3>
-                <p>
-                    Ser a referência em consultoria tecnológica e inovação
-                    para empresas que querem crescer com solidez em Angola.
-                </p>
-            </article>
-
-            <article class="value-card">
-                <div class="value-icon">
-                    <i data-lucide="heart-handshake"></i>
-                </div>
-                <h3>Valores</h3>
-                <p>
-                    Transparência, proximidade com o cliente e rigor técnico
-                    em cada projeto que assinamos.
-                </p>
-            </article>
-
-        </div>
+        <div class="area-detail-gallery" id="areaGallery"></div>
 
     </div>
 
 </section>
 
 <!-- ======================================================
-                    A NOSSA EQUIPA
+                OUTRAS ÁREAS DE ATUAÇÃO
 ====================================================== -->
 
-<section class="about-team">
+<section class="area-related">
 
     <div class="container">
 
-        <div class="about-team-header">
-            <span class="subtitle">PESSOAS</span>
-            <h2>Uma equipa multidisciplinar</h2>
-            <p>
-                Consultores, engenheiros e designers a trabalhar em conjunto
-                para entregar soluções completas — da estratégia à execução.
-            </p>
+        <div class="section-header">
+            <span class="subtitle">EXPLORAR MAIS</span>
+            <h2>Outras áreas de atuação</h2>
         </div>
 
-        <div class="about-team-grid">
-
-            <article class="team-card">
-                <div class="team-icon"><i data-lucide="briefcase-business"></i></div>
-                <h3>Consultoria</h3>
-                <p>Diagnóstico, estratégia e acompanhamento de transformação digital.</p>
-            </article>
-
-            <article class="team-card">
-                <div class="team-icon"><i data-lucide="code-2"></i></div>
-                <h3>Engenharia</h3>
-                <p>Desenvolvimento de software, automação e infraestrutura.</p>
-            </article>
-
-            <article class="team-card">
-                <div class="team-icon"><i data-lucide="palette"></i></div>
-                <h3>Design</h3>
-                <p>Experiência de utilizador e identidade visual dos produtos.</p>
-            </article>
-
-            <article class="team-card">
-                <div class="team-icon"><i data-lucide="headset"></i></div>
-                <h3>Suporte</h3>
-                <p>Acompanhamento contínuo depois do projeto entregue.</p>
-            </article>
-
-        </div>
+        <div class="area-related-grid" id="areaRelated"></div>
 
     </div>
 
@@ -706,7 +578,7 @@
 
     <!-- APP -->
     <script src="js/header.js"></script>
-    <script src="js/pages/sobre.js"></script>
+    <script src="js/pages/area.js"></script>
 
 <div class="menu-overlay"></div>
 

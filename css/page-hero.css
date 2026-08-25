@@ -9,7 +9,7 @@
     display:flex;
     align-items:center;
     overflow:hidden;
-    margin-top:82px; /* compensa o header fixo */
+    margin-top:96px; /* compensa o header fixo */
 }
 
 .page-hero-bg{

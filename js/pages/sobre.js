@@ -9,7 +9,7 @@ document.addEventListener("DOMContentLoaded", function () {
                     COUNTER ANIMATION
     ====================================================== */
 
-    const aboutStats = document.querySelector(".about-stats");
+    const aboutStats = document.querySelector(".about-stats-inline");
 
     if (aboutStats) {
 

@@ -166,102 +166,47 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
     /* ======================================================
-        STACK DRAG (CARDS SWIPE — ÁREAS DE ATUAÇÃO)
+    /* ======================================================
+        SLIDER FULL-BLEED — ÁREAS DE ATUAÇÃO
     ====================================================== */
 
-    const cards = document.querySelectorAll(".area-card");
-    const nextBtn = document.querySelector(".carousel-btn.next");
-    const prevBtn = document.querySelector(".carousel-btn.prev");
+    const areasTrack = document.getElementById("areasTrack");
+    const areasSlides = document.querySelectorAll(".area-slide");
+    const areasPrev = document.getElementById("areasPrev");
+    const areasNext = document.getElementById("areasNext");
+    const areasCurrent = document.getElementById("areasCurrent");
 
-    let index = 0;
+    let areaIndex = 0;
 
-    function updateStack() {
-        cards.forEach((card, i) => {
-            card.classList.remove("active", "next", "back", "hidden");
-
-            const pos = (i - index + cards.length) % cards.length;
-
-            if (pos === 0) card.classList.add("active");
-            else if (pos === 1) card.classList.add("next");
-            else if (pos === 2) card.classList.add("back");
-            else card.classList.add("hidden");
-        });
+    function updateAreasSlider() {
+        areasTrack.style.transform = `translateX(-${areaIndex * 100}%)`;
+        if (areasCurrent) {
+            areasCurrent.textContent = String(areaIndex + 1).padStart(2, "0");
+        }
     }
 
-    if (cards.length && nextBtn && prevBtn) {
+    if (areasTrack && areasSlides.length && areasPrev && areasNext) {
 
-        nextBtn.addEventListener("click", () => {
-            index = (index + 1) % cards.length;
-            updateStack();
+        areasNext.addEventListener("click", () => {
+            areaIndex = (areaIndex + 1) % areasSlides.length;
+            updateAreasSlider();
         });
 
-        prevBtn.addEventListener("click", () => {
-            index = (index - 1 + cards.length) % cards.length;
-            updateStack();
+        areasPrev.addEventListener("click", () => {
+            areaIndex = (areaIndex - 1 + areasSlides.length) % areasSlides.length;
+            updateAreasSlider();
         });
 
-        updateStack();
+        updateAreasSlider();
     }
 
     /* ======================================================
-                    COUNTER ANIMATION
+                    "COMO TRABALHAMOS"
     ====================================================== */
 
-    const impact = document.querySelector("#impact");
-
-    if (impact) {
-
-        const counters = document.querySelectorAll(".counter");
-
-        const observer = new IntersectionObserver((entries) => {
-
-            entries.forEach(entry => {
-
-                if (!entry.isIntersecting) return;
-
-                counters.forEach(counter => {
-
-                    const target = +counter.dataset.target;
-
-                    let value = 0;
-
-                    const speed = target / 80;
-
-                    function update() {
-
-                        value += speed;
-
-                        if (value < target) {
-
-                            counter.innerText = Math.ceil(value);
-
-                            requestAnimationFrame(update);
-
-                        } else {
-
-                            counter.innerText = target;
-
-                        }
-
-                    }
-
-                    update();
-
-                });
-
-                observer.disconnect();
-
-            });
-
-        }, {
-
-            threshold: 0.45
-
-        });
-
-        observer.observe(impact);
-
-    }
+    /* nota: a secção passou a ter pilares estáticos e
+       minimalistas — já não precisa de animação de
+       revelação ao scroll. */
 
     /* ======================================================
                 CASE STUDY FILTER
