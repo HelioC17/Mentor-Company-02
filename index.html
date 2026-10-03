@@ -1,1338 +1,223 @@
 <!DOCTYPE html>
-<html lang="pt">
-
+<html lang="pt-AO">
 <head>
-
-<!-- ======================================================
-                        BASE
-====================================================== -->
-
-
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-
-<title> Mentor Company | Tecnologia & Soluções Digitais</title>
-
-<meta name="description" content="Empresa de tecnologia especializada em desenvolvimento de soluções tecnológicas, soluções digitais, consultoria IT, marketing e inovação empresarial.">
-<meta name="keywords" content="tecnologia, desenvolvimento web, software, marketing digital, soluções empresariais, Angola, IT, consultoria">
-<meta name="author" content="MENTOR - PRESTAÇÃO DE SERVIÇOS, LDA">
-
-<meta name="robots" content="index, follow">
-<meta name="theme-color" content="#0F172A">
-
-<link rel="canonical" href="https://www.seudominio.com">
-
-<!-- ======================================================
-                        FAVICON
-====================================================== -->
-
-
-<link rel="icon" type="image/png" href="assets/logo/apple-touch-icon.png">
-<link rel="apple-touch-icon" href="assets/logo/apple-touch-icon.png">
-
-<!-- ======================================================
-                        FONTS + ICONS
-====================================================== -->
-
-
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Mentor Company | Consultoria tecnológica, automação e IA em Angola</title>
+<meta name="description" content="A Mentor Company ajuda empresas em Angola com consultoria tecnológica, desenvolvimento web, cibersegurança, cloud, automação e inteligência artificial.">
+<meta property="og:title" content="Mentor Company | Tecnologia que resolve">
+<meta property="og:description" content="Consultoria, automação e IA para empresas angolanas, do diagnóstico ao suporte contínuo.">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="pt_AO">
+<link rel="icon" href="assets/favicon.ico">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-
-<script src="https://unpkg.com/lucide@latest"></script>
-
-<!-- ======================================================
-                        CSS
-====================================================== -->
-
-
-<link rel="stylesheet" href="css/base.css">
-<link rel="stylesheet" href="css/header.css">
-<link rel="stylesheet" href="css/footer.css">
-<link rel="stylesheet" href="css/pages/home.css">
-
-
-
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Sora:wght@600;700&family=Figtree:wght@400;500;600;700&display=swap">
+<link rel="stylesheet" href="css/style.css">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Organization","name":"Mentor Company","email":"mentor.tech@mentorcompanhia.com","telephone":"+244935675989","address":{"@type":"PostalAddress","addressLocality":"Luanda","addressCountry":"AO"},"sameAs":["https://www.linkedin.com/company/mentor-companhia/","https://www.instagram.com/mentor_companhia/"]}
+</script>
 </head>
 <body>
-    
 
-<!-- ======================================================
-                        HEADER
-====================================================== -->
-<header class="site-header" id="header">
-
-    <div class="header-container">
-
-        <!-- LOGO -->
-        <div class="header-logo">
-            <a href="#hero">
-                <img class="logo-light" src="assets/logo/logo-color.png.png" alt="Mentor Company">
-                <img class="logo-dark" src="assets/logo/logo-white.png.png" alt="Mentor Company">
-            </a>
-        </div>
-
-        <!-- NAVEGAÇÃO PRINCIPAL -->
-        <nav class="main-navigation" aria-label="Navegação principal">
-
-            <ul class="nav-list">
-
-                <li class="nav-item">
-                    <a href="#hero" class="nav-link active" data-i18n="nav.home">Home</a>
-                </li>
-
-                <li class="nav-item">
-                    <a href="sobre.html" class="nav-link" data-i18n="nav.about">Sobre</a>
-                </li>
-
-                <!-- MEGA MENU -->
-                <li class="nav-item dropdown">
-
-                    <a href="servicos.html" class="nav-link dropdown-toggle" aria-haspopup="true">
-                        <span data-i18n="nav.solutions">Soluções</span>
-                        <span class="dropdown-icon">⌄</span>
-                    </a>
-
-                    <div class="mega-menu">
-                        <div class="mega-content">
-
-                            <!-- COLUNA ESQUERDA -->
-                            <div class="mega-introduction">
-                                <h2 data-i18n-html="megamenu.title">Tecnologia para <strong>transformar negócios.</strong></h2>
-                                <p data-i18n="megamenu.desc">Desenvolvemos soluções digitais, infraestrutura tecnológica e inovação para empresas que procuram crescer.</p>
-                                <a href="contacto.html" class="mega-button" data-i18n="megamenu.cta">Falar com especialista →</a>
-                            </div>
-
-                            <!-- COLUNA DIREITA -->
-                            <div class="mega-services">
-                                <a href="servicos.html#consultoria-tecnologica"><span>01</span><span data-i18n="megamenu.service1">Consultoria Tecnológica</span></a>
-                                <a href="servicos.html#desenvolvimento-web"><span>02</span><span data-i18n="megamenu.service2">Desenvolvimento Web</span></a>
-                                <a href="servicos.html#ciberseguranca"><span>03</span><span data-i18n="megamenu.service3">Cibersegurança</span></a>
-                                <a href="servicos.html#redes-infraestrutura"><span>04</span><span data-i18n="megamenu.service4">Redes e Infraestrutura</span></a>
-                                <a href="servicos.html#cloud-computing"><span>05</span><span data-i18n="megamenu.service5">Cloud Computing</span></a>
-                                <a href="servicos.html#automacao-empresarial"><span>06</span><span data-i18n="megamenu.service6">Automação Empresarial</span></a>
-                                <a href="servicos.html#inteligencia-artificial"><span>07</span><span data-i18n="megamenu.service7">Inteligência Artificial</span></a>
-                                <a href="servicos.html#rfid-inventario"><span>08</span><span data-i18n="megamenu.service8">RFID e Gestão de Inventário</span></a>
-                            </div>
-
-                        </div>
-                    </div>
-
-                </li>
-
-                <li class="nav-item">
-                    <a href="projetos.html" class="nav-link" data-i18n="nav.projects">Projetos</a>
-                </li>
-
-                <li class="nav-item">
-                    <a href="blog.html" class="nav-link" data-i18n="nav.blog">Blog</a>
-                </li>
-
-                <li class="nav-item">
-                    <a href="contacto.html" class="nav-link" data-i18n="nav.contact">Contacto</a>
-                </li>
-
-            </ul>
-
-        </nav>
-
-        <!-- BOTÃO DE AÇÃO + IDIOMA -->
-        <div class="header-actions">
-
-            <div class="lang-switch" id="langSwitch">
-
-                <button type="button" class="lang-current" aria-haspopup="true" aria-label="Selecionar idioma">
-                    <i data-lucide="globe"></i>
-                    <span class="lang-active">PT</span>
-                    <i data-lucide="chevron-down" class="lang-caret"></i>
-                </button>
-
-                <div class="lang-dropdown">
-                    <span class="lang" data-lang="PT"><span class="lang-flag">🇵🇹</span> Português</span>
-                    <span class="lang" data-lang="EN"><span class="lang-flag">🇬🇧</span> English</span>
-                </div>
-
-            </div>
-
-            <a href="contacto.html" class="header-button" data-i18n="header.cta">Fale Connosco</a>
-
-        </div>
-
-        <!-- BOTÃO MOBILE -->
-<button
-    class="mobile-toggle"
-    id="mobileToggle"
-    aria-label="Abrir menu"
-    aria-expanded="false">
-
-    <span></span>
-    <span></span>
-    <span></span>
-
-</button>
-
-    </div>
-
+<header>
+  <div class="w">
+    <a href="#inicio" aria-label="Mentor Company, início"><img src="assets/img/logo-mentor.webp" alt="Mentor Company" width="140" height="34"></a>
+    <button id="mb" aria-label="Abrir menu" aria-expanded="false" aria-controls="nv">☰</button>
+    <nav id="nv" aria-label="Principal">
+      <a href="#inicio">Início</a>
+      <a href="#sobre">Sobre</a>
+      <a href="#servicos">Serviços</a>
+      <a href="#projetos">Projetos</a>
+      <a href="formacao.html">Formação</a>
+      <a href="#contacto">Contactos</a>
+      <a class="btn p" href="#contacto">Fale Connosco</a>
+    </nav>
+  </div>
 </header>
 
-<!-- ======================================================
-                        HERO
-====================================================== -->
+<main>
 
-<section id="hero" class="hero">
-
-    <!-- PARTICLES -->
-    <canvas id="hero-particles"></canvas>
-
-    <!-- EFFECT LAYERS -->
-    <div class="hero-bg-effects">
-        <div class="grid-overlay"></div>
-        <div class="glow-orb orb-1"></div>
-        <div class="glow-orb orb-2"></div>
-        <div class="noise-overlay"></div>
+  <section class="hero" id="inicio" style="padding-bottom:0">
+    <div class="w">
+      <div class="txt">
+        <h1>Tecnologia que resolve o que trava o seu negócio</h1>
+        <p class="s">Consultoria, desenvolvimento, automação e inteligência artificial para empresas e instituições em Angola, do diagnóstico ao suporte contínuo.</p>
+        <div class="bt">
+          <a class="btn p" href="#contacto">Fale com a Mentor</a>
+          <a class="btn g" href="#servicos">Conheça os serviços</a>
+        </div>
+      </div>
+      <div class="fig" id="heroFig">
+        <img class="on" src="assets/img/hero-vr.webp" alt="Colaborador da Mentor com óculos de realidade virtual a apontar para cima" width="640" height="640">
+        <img src="assets/img/hero-consultora.webp" alt="Consultora da Mentor com portátil" width="640" height="640">
+        <div class="chip"><b>73+</b>projetos desenvolvidos</div>
+      </div>
     </div>
+    <div class="loc"><div class="w"><span>Presença em Luanda</span><span>Benguela</span><span>Saurimo</span></div></div>
+  </section>
 
-    <!-- SLIDER (IMPORTANTE: dentro do hero) -->
-    <div class="hero-slider-track">
-
-        <div class="slide active">
-            <img src="assets/images/Gemini_Generated_Image_9atey89atey89ate.png" alt="">
-            <div class="overlay"></div>
-
-            <div class="content">
-                <span class="tag" data-i18n="hero.slide1.tag">DIGITAL • INNOVATION • AI</span>
-                <h1 data-i18n="hero.slide1.title">Transformamos ideias em soluções digitais</h1>
-                <p data-i18n="hero.slide1.desc">Tecnologia, inovação e performance para empresas modernas.</p>
-                <a href="#services" class="btn-primary" data-i18n="hero.slide1.cta">Explorar Serviços</a>
-            </div>
+  <section class="about" id="sobre">
+    <div class="w">
+      <div class="pic"><img src="assets/img/sobre-equipa.webp" alt="Equipa da Mentor em reunião de trabalho" loading="lazy" width="640" height="427"></div>
+      <div>
+        <h2>Tecnologia com propósito, não só software</h2>
+        <p class="lead">Nascemos para ajudar empresas angolanas a atravessar a transformação digital com confiança. Combinamos consultoria, desenvolvimento e automação para resolver problemas reais, lado a lado com cada cliente.</p>
+        <div class="mv">
+          <p><strong>Missão.</strong> Simplificar a adoção de tecnologia, com soluções práticas que geram resultado desde o primeiro dia.</p>
+          <p><strong>Valores.</strong> Transparência, proximidade e rigor técnico em cada projeto.</p>
         </div>
-
-        <div class="slide">
-            <img src="assets/images/Gemini_Generated_Image_jtfz0wjtfz0wjtfz.png" alt="">
-            <div class="overlay"></div>
-
-            <div class="content">
-                <span class="tag" data-i18n="hero.slide2.tag">AUTOMATION • DATA • AI</span>
-                <h1 data-i18n="hero.slide2.title">Automação e Inteligência Empresarial</h1>
-                <p data-i18n="hero.slide2.desc">Soluções inteligentes para otimizar processos e resultados.</p>
-                <a href="#products" class="btn-primary" data-i18n="hero.slide2.cta">Ver Soluções</a>
-            </div>
+        <div class="st">
+          <div><b>73+</b><span>Projetos desenvolvidos</span></div>
+          <div><b>35+</b><span>Clientes atendidos</span></div>
+          <div><b>10+</b><span>Parceiros estratégicos</span></div>
+          <div><b>4+</b><span>Anos de experiência</span></div>
         </div>
-
-        <div class="slide">
-            <img src="assets/images/Gemini_Generated_Image_td09rltd09rltd09.png" alt="">
-            <div class="overlay"></div>
-
-            <div class="content">
-                <span class="tag" data-i18n="hero.slide3.tag">WEB • SYSTEMS • GROWTH</span>
-                <h1 data-i18n="hero.slide3.title">Inovação que gera crescimento real</h1>
-                <p data-i18n="hero.slide3.desc">Desenvolvimento web, marketing e sistemas empresariais.</p>
-                <a href="contacto.html" class="btn-primary" data-i18n="hero.slide3.cta">Falar Connosco</a>
-            </div>
-        </div>
-
+      </div>
     </div>
+  </section>
 
-        <!-- DOTS -->
-            <div class="slider-nav">
-            <span class="nav-dot active" data-index="0"></span>
-            <span class="nav-dot" data-index="1"></span>
-            <span class="nav-dot" data-index="2"></span>
-        </div>
-
-</section>
-
-   <!-- ======================================================
-                    ÁREAS DE ATUAÇÃO
-====================================================== -->
-
-
-   <!-- ======================================================
-                IMPACTO / ESTATÍSTICAS
-====================================================== -->
-
-<section id="impact" class="impact">
-
-    <div class="impact-bg-grid"></div>
-
-    <div class="container">
-
-        <div class="approach-intro">
-
-            <div class="approach-map">
-
-                <svg viewBox="0 0 400 500" class="angola-map" aria-hidden="true">
-
-                    <defs>
-                        <linearGradient id="scanGradient" x1="0" y1="0" x2="0" y2="1">
-                            <stop offset="0%" stop-color="#F97316" stop-opacity="0" />
-                            <stop offset="50%" stop-color="#F97316" stop-opacity=".45" />
-                            <stop offset="100%" stop-color="#F97316" stop-opacity="0" />
-                        </linearGradient>
-                        <clipPath id="angolaClip">
-                            <polygon points="52.6,48.7 39.0,53.2 29.1,63.2 33.6,84.1 40.9,83.1 40.9,65.9 54.5,53.2" />
-                            <polygon points="38.1,96.8 71.7,171.1 58.1,185.6 81.7,242.7 77.1,273.6 55.4,294.4 20.0,386.0 20.0,425.0 66.2,418.7 83.5,432.3 214.1,431.4 229.5,445.0 281.2,450.4 353.7,440.4 317.4,395.1 318.3,300.8 373.7,298.1 378.2,244.6 325.6,244.6 327.4,220.1 313.8,196.5 313.8,133.0 277.5,131.2 275.7,120.3 249.4,123.0 241.3,152.1 188.7,155.7 171.4,133.9 158.7,90.4" />
-                        </clipPath>
-                    </defs>
-
-                    <!-- linhas de circuito decorativas -->
-                    <path class="angola-circuit" d="M 5,90 L 40,90 L 40,130" />
-                    <path class="angola-circuit angola-circuit-d2" d="M 395,150 L 355,150 L 355,190" />
-                    <path class="angola-circuit angola-circuit-d3" d="M 10,400 L 45,400 L 45,360" />
-                    <path class="angola-circuit angola-circuit-d4" d="M 390,420 L 350,420 L 350,380" />
-
-                    <!-- Cabinda (exclave) -->
-                    <polygon class="angola-shape" points="52.6,48.7 39.0,53.2 29.1,63.2 33.6,84.1 40.9,83.1 40.9,65.9 54.5,53.2" />
-
-                    <!-- Angola (contorno real, extraído e simplificado a partir do mapa fornecido) -->
-                    <polygon class="angola-shape" points="38.1,96.8 71.7,171.1 58.1,185.6 81.7,242.7 77.1,273.6 55.4,294.4 20.0,386.0 20.0,425.0 66.2,418.7 83.5,432.3 214.1,431.4 229.5,445.0 281.2,450.4 353.7,440.4 317.4,395.1 318.3,300.8 373.7,298.1 378.2,244.6 325.6,244.6 327.4,220.1 313.8,196.5 313.8,133.0 277.5,131.2 275.7,120.3 249.4,123.0 241.3,152.1 188.7,155.7 171.4,133.9 158.7,90.4" />
-
-                    <!-- rasto luminoso a "correr" pelo contorno real (efeito circuito) -->
-                    <polygon class="angola-trace" points="52.6,48.7 39.0,53.2 29.1,63.2 33.6,84.1 40.9,83.1 40.9,65.9 54.5,53.2" />
-                    <polygon class="angola-trace" points="38.1,96.8 71.7,171.1 58.1,185.6 81.7,242.7 77.1,273.6 55.4,294.4 20.0,386.0 20.0,425.0 66.2,418.7 83.5,432.3 214.1,431.4 229.5,445.0 281.2,450.4 353.7,440.4 317.4,395.1 318.3,300.8 373.7,298.1 378.2,244.6 325.6,244.6 327.4,220.1 313.8,196.5 313.8,133.0 277.5,131.2 275.7,120.3 249.4,123.0 241.3,152.1 188.7,155.7 171.4,133.9 158.7,90.4" />
-
-                    <!-- scan digital a percorrer o território -->
-                    <g clip-path="url(#angolaClip)">
-                        <rect class="angola-scan" x="0" y="-250" width="400" height="250" fill="url(#scanGradient)" />
-                    </g>
-
-                    <!-- Luanda -->
-                    <g class="map-point">
-                        <circle cx="71" cy="207.3" r="9" class="map-point-pulse" />
-                        <circle cx="71" cy="207.3" r="4" class="map-point-core" />
-                    </g>
-                    <text x="84" y="204" class="map-label">Luanda</text>
-
-                    <!-- Benguela -->
-                    <g class="map-point map-point-delay">
-                        <circle cx="73.3" cy="306.5" r="9" class="map-point-pulse" />
-                        <circle cx="73.3" cy="306.5" r="4" class="map-point-core" />
-                    </g>
-                    <text x="86" y="304" class="map-label">Benguela</text>
-
-                    <!-- Saurimo -->
-                    <g class="map-point map-point-delay-2">
-                        <circle cx="272.7" cy="229.0" r="9" class="map-point-pulse" />
-                        <circle cx="272.7" cy="229.0" r="4" class="map-point-core" />
-                    </g>
-                    <text x="286" y="226" class="map-label">Saurimo</text>
-
-                </svg>
-
-            </div>
-
-            <div class="approach-intro-text">
-
-                <span class="subtitle">
-                    IMPACTO EM ANGOLA
-                </span>
-
-                <h2>
-                    Ajudar Angola a crescer, cada vez mais
-                </h2>
-
-                <p>
-                    Trabalhamos com foco em tecnologia e transformação digital,
-                    para impulsionar empresas e instituições angolanas rumo ao futuro.
-                </p>
-
-            </div>
-
-        </div>
-
-        <div class="pillars-row">
-
-            <a href="servicos.html" class="pillar-item">
-                <i data-lucide="settings-2"></i>
-                <span>Serviços Geridos</span>
-            </a>
-
-            <div class="pillar-divider"></div>
-
-            <a href="projetos.html" class="pillar-item">
-                <i data-lucide="folder-kanban"></i>
-                <span>Projetos</span>
-            </a>
-
-            <div class="pillar-divider"></div>
-
-            <a href="contacto.html" class="pillar-item">
-                <i data-lucide="life-buoy"></i>
-                <span>Suporte</span>
-            </a>
-
-            <div class="pillar-divider"></div>
-
-            <a href="servicos.html#consultoria-tecnologica" class="pillar-item">
-                <i data-lucide="compass"></i>
-                <span>Consultoria</span>
-            </a>
-
-        </div>
-
+  <section id="servicos">
+    <div class="w">
+      <h2>Oito frentes para levar tecnologia ao seu negócio</h2>
+      <p class="lead">Cada projeto pode ativar uma ou várias áreas, da consultoria inicial à automação e inteligência artificial.</p>
+      <div class="sg"><article class="sc"><h3>Consultoria Tecnológica</h3><p>Diagnóstico do estado atual, identificação de gargalos e um plano de transformação digital realista e priorizado.</p><ul><li>Auditoria tecnológica</li><li>Roadmap digital</li><li>Gestão da mudança</li></ul><a href="#contacto" data-s="Consultoria Tecnológica">Falar sobre este serviço</a></article><article class="sc"><h3>Desenvolvimento Web</h3><p>Websites, plataformas e portais à medida, pensados para performance, conversão e fácil manutenção.</p><ul><li>Sites institucionais</li><li>Portais empresariais</li><li>E-commerce</li></ul><a href="#contacto" data-s="Desenvolvimento Web">Falar sobre este serviço</a></article><article class="sc"><h3>Cibersegurança</h3><p>Avaliação de vulnerabilidades, proteção de dados e políticas de segurança adaptadas a cada empresa.</p><ul><li>Vulnerabilidades</li><li>Políticas de dados</li><li>Formação de equipas</li></ul><a href="#contacto" data-s="Cibersegurança">Falar sobre este serviço</a></article><article class="sc"><h3>Redes e Infraestrutura</h3><p>Redes, servidores e infraestrutura local com foco em estabilidade, segurança e escalabilidade.</p><ul><li>Redes locais</li><li>Servidores</li><li>Cablagem estruturada</li></ul><a href="#contacto" data-s="Redes e Infraestrutura">Falar sobre este serviço</a></article><article class="sc"><h3>Cloud Computing</h3><p>Migração e gestão de ambientes Azure e Microsoft 365, com menos custos e mais flexibilidade.</p><ul><li>Migração cloud</li><li>Backup e recuperação</li><li>Otimização de custos</li></ul><a href="#contacto" data-s="Cloud Computing">Falar sobre este serviço</a></article><article class="sc"><h3>Automação Empresarial</h3><p>Fluxos automatizados com n8n que eliminam tarefas repetitivas, de recrutamento a atendimento.</p><ul><li>Integração de sistemas</li><li>Automação de RH</li><li>Relatórios automáticos</li></ul><a href="#contacto" data-s="Automação Empresarial">Falar sobre este serviço</a></article><article class="sc"><h3>Inteligência Artificial</h3><p>Machine learning, chatbots e análise de dados aplicados a problemas concretos do negócio.</p><ul><li>Chatbots e assistentes</li><li>Análise preditiva</li><li>Controlo de qualidade com IA</li></ul><a href="#contacto" data-s="Inteligência Artificial">Falar sobre este serviço</a></article><article class="sc"><h3>RFID e Gestão de Inventário</h3><p>Identificação RFID/NFC e controlo de stock em tempo real, sem erros manuais.</p><ul><li>Contagem e auditoria</li><li>Integração com sistemas</li><li>Alertas de inventário</li></ul><a href="#contacto" data-s="RFID e Gestão de Inventário">Falar sobre este serviço</a></article></div>
     </div>
+  </section>
 
-</section>
-
-<!-- ======================================================
-        O QUE FAZEMOS — minimalista, limpo, sem imagem de fundo
-====================================================== -->
-
-<section class="capabilities">
-
-    <div class="container">
-
-        <div class="capabilities-header">
-            <span class="subtitle">O QUE FAZEMOS</span>
-            <h2>Soluções que resolvem desafios reais do seu negócio</h2>
-            <p>
-                Estas são algumas das frentes onde a tecnologia da Mentor Tech
-                gera valor desde o primeiro dia.
-            </p>
-        </div>
-
-        <div class="capabilities-grid">
-
-            <article class="capability-card">
-                <span class="capability-number">01</span>
-                <h3>Transformação Digital</h3>
-                <p>Digitalização de processos, gestão documental e automação de fluxos de trabalho com ferramentas como Notion, Microsoft 365 e SharePoint — para eliminar tarefas manuais e centralizar a informação crítica do negócio.</p>
-                <a href="servicos.html#automacao-empresarial" class="capability-link">Automação de processos <i data-lucide="arrow-right"></i></a>
-            </article>
-
-            <article class="capability-card">
-                <span class="capability-number">02</span>
-                <h3>Soluções Inteligentes</h3>
-                <p>Identificação por RFID e NFC, leitura de QR Code, sensores IoT, controlo de ativos, gestão de visitantes e monitorização de salas em tempo real — tecnologia aplicada ao dia a dia físico da empresa.</p>
-                <a href="servicos.html#rfid-inventario" class="capability-link">IoT e RFID <i data-lucide="arrow-right"></i></a>
-            </article>
-
-            <article class="capability-card">
-                <span class="capability-number">03</span>
-                <h3>Dados e IA</h3>
-                <p>Dashboards e Business Intelligence para decisões mais rápidas, modelos preditivos e assistentes com inteligência artificial que analisam dados e antecipam tendências do negócio.</p>
-                <a href="servicos.html#inteligencia-artificial" class="capability-link">Business Intelligence <i data-lucide="arrow-right"></i></a>
-            </article>
-
-            <article class="capability-card">
-                <span class="capability-number">04</span>
-                <h3>Cibersegurança</h3>
-                <p>Auditorias completas, hardening de sistemas, definição de políticas de segurança, monitorização contínua e formação de utilizadores — para reduzir riscos antes que se tornem incidentes.</p>
-                <a href="servicos.html#ciberseguranca" class="capability-link">Auditorias de segurança <i data-lucide="arrow-right"></i></a>
-            </article>
-
-            <article class="capability-card">
-                <span class="capability-number">05</span>
-                <h3>Consultoria e Gestão</h3>
-                <p>Business Analysis, levantamento de requisitos, desenho de processos e gestão de projetos, do diagnóstico inicial à entrega. Apoiamos ainda a definição de indicadores de sucesso e a gestão da mudança dentro da organização.</p>
-                <a href="servicos.html#consultoria-tecnologica" class="capability-link">Gestão de projetos <i data-lucide="arrow-right"></i></a>
-            </article>
-
-        </div>
-
-        <a href="servicos.html" class="capabilities-all-link">
-            Ver todas as soluções <i data-lucide="arrow-right"></i>
-        </a>
-
+  <section class="dk" id="problemas">
+    <div class="w">
+      <div class="hd">
+        <h2>Reconhece estes desafios?</h2>
+        <p class="lead">Não vendemos serviços por catálogo. Começamos pelo problema que a sua direção enfrenta.</p>
+      </div>
+      <div class="pr"><div><small>Direção de TI</small><h3>A manutenção diária consome a equipa</h3><p>Redes, servidores, backups e monitorização exigem atenção todos os dias.</p></div><div><small>Como resolvemos</small><p>Redes e Infraestrutura, Automação Empresarial</p></div><div><small>Resultado</small><p>A dedicação de uma equipa de TI sem contratar uma inteira.</p></div></div><div class="pr"><div><small>Direção Financeira</small><h3>A TI é imprevisível no orçamento</h3><p>Renovações sem aviso e licenças pagas sem uso.</p></div><div><small>Como resolvemos</small><p>Cloud Computing, Consultoria Tecnológica</p></div><div><small>Resultado</small><p>Previsibilidade antes de cada decisão.</p></div></div><div class="pr"><div><small>Segurança e Conformidade</small><h3>Os riscos ficam por identificar</h3><p>Quem acede, o que está protegido, como se recupera.</p></div><div><small>Como resolvemos</small><p>Cibersegurança, Redes e Infraestrutura</p></div><div><small>Resultado</small><p>Respostas documentadas, não garantias verbais.</p></div></div><div class="pr"><div><small>Direção Geral</small><h3>Ninguém interno responde pela tecnologia</h3><p>Sem responsável dedicado, a tecnologia só aparece quando falha.</p></div><div><small>Como resolvemos</small><p>Consultoria Tecnológica, Automação Empresarial</p></div><div><small>Resultado</small><p>Um parceiro que opera, monitoriza e responde.</p></div></div>
     </div>
+  </section>
 
-</section>
-
-  <!-- ======================================================
-                projects
-====================================================== -->
-
-
-<section id="cases" class="cases">
-
-    <div class="container">
-
-        <!-- HEADER -->
-        <div class="cases-header">
-
-            <span class="subtitle">CASE STUDIES</span>
-
-            <h2>Soluções que geram impacto real</h2>
-
-            <p>
-                Projetos desenvolvidos com foco em eficiência, automação e transformação digital para empresas em Angola.
-            </p>
-
-            <!-- FILTROS -->
-            <div class="cases-filters">
-
-    <button class="active" data-filter="featured">Em Alta ★</button>
-
-    <button data-filter="web">Web</button>
-
-    <button data-filter="automation">Automação</button>
-
-    <button data-filter="iot">IoT</button>
-
-    <button data-filter="ia">IA</button>
-
-    <button data-filter="data">Data & Dashboards</button>
-
-    <button data-filter="3d"> 3D </button>
-
-</div>
-
-        </div>
-
-        <!-- GRID -->
-        <div class="cases-grid">
-
-            <!-- CASE 1 -->
-            
-<div class="case-card featured" data-category="web">
-
-    <div class="case-image">
-        <img src="assets/cases/6325219.jpg" alt="Website Pizzaria">
+  <section id="processo">
+    <div class="w">
+      <h2>Como trabalhamos</h2>
+      <p class="lead">Um processo claro, do diagnóstico inicial ao suporte depois da entrega.</p>
+      <ol class="tl" id="tl"><li><span>1</span><h3>Diagnóstico</h3><p>Percebemos o estado atual e onde estão os gargalos.</p></li><li><span>2</span><h3>Estratégia</h3><p>Definimos um plano priorizado e indicadores de sucesso.</p></li><li><span>3</span><h3>Desenvolvimento</h3><p>Construímos a solução com a sua equipa ao lado.</p></li><li><span>4</span><h3>Entrega</h3><p>Implementamos e garantimos que gera impacto no negócio.</p></li><li><span>5</span><h3>Suporte contínuo</h3><p>Acompanhamos depois de o projeto estar no ar.</p></li></ol>
     </div>
+  </section>
 
-    <div class="case-content">
+  <section class="dk" id="projetos">
+    <div class="w">
+      <h2>Projetos com impacto em Angola</h2>
+      <p class="lead">Soluções desenvolvidas com foco em eficiência, automação e transformação digital.</p>
+      <div class="fx"><figure><img src="assets/img/projeto-equipa.webp" alt="Automação de Processos de Recrutamento com n8n" loading="lazy" width="900" height="502"><figcaption><small>Automação · RH</small><h3>Automação de Processos de Recrutamento com n8n</h3></figcaption></figure><figure><img src="assets/img/projeto-nfc.webp" alt="Sistema de Controlo de Acessos NFC" loading="lazy" width="900" height="506"><figcaption><small>IoT · NFC</small><h3>Sistema de Controlo de Acessos NFC</h3></figcaption></figure><figure><img src="assets/img/projeto-escritorio.webp" alt="Sistemas Inteligentes para Escritórios" loading="lazy" width="900" height="1242"><figcaption><small>IoT · Corporativo</small><h3>Sistemas Inteligentes para Escritórios</h3></figcaption></figure><figure><img src="assets/img/projeto-dashboard.webp" alt="Análise de Dados para Produtividade" loading="lazy" width="900" height="502"><figcaption><small>Data · BI</small><h3>Análise de Dados para Produtividade</h3></figcaption></figure></div>
+      <div class="more-wrap">
+        <button class="btn g" id="moreBtn" type="button" aria-expanded="false" aria-controls="moreProjects">Ver mais projetos</button>
+      </div>
+      <div class="more" id="moreProjects">
+        <ul class="cl" style="color:#fff"><li><h3>Projeto Técnico de CCTV</h3><span>3D · Engenharia</span><p>Videovigilância de estaleiro com planeamento de cobertura e infraestrutura.</p></li><li><h3>Equipamento Tecnológico Industrial</h3><span>3D · Engenharia</span><p>Da modelação 3D à especificação funcional para produção.</p></li><li><h3>Website para Pizzaria</h3><span>Web · Restauração</span><p>Menu, pedidos online e presença de marca.</p></li></ul>
+      </div>
+    </div>
+  </section>
 
-        <div class="case-meta">
-            <span>Web</span>
-            <span>Restauração</span>
+  <section id="stack">
+    <div class="w">
+      <h2>As ferramentas que usamos</h2>
+      <p class="lead">Plataformas e tecnologias que integramos nos projetos dos nossos clientes.</p>
+      <ul class="lg" aria-label="Ferramentas e tecnologias que utilizamos">
+        <li><img src="assets/img/tech-figma.webp" alt="Figma" loading="lazy" width="260" height="72"></li><li><img src="assets/img/tech-hubspot.webp" alt="HubSpot" loading="lazy" width="260" height="74"></li><li><img src="assets/img/tech-cegid-primavera.webp" alt="Cegid Primavera" loading="lazy" width="260" height="35"></li><li><img src="assets/img/tech-google-analytics.webp" alt="Google Analytics" loading="lazy" width="260" height="90"></li><li><img src="assets/img/tech-mailchimp.webp" alt="Mailchimp" loading="lazy" width="260" height="143"></li><li><img src="assets/img/tech-microsoft-365.webp" alt="Microsoft 365" loading="lazy" width="260" height="150"></li><li><img src="assets/img/tech-microsoft-azure.webp" alt="Microsoft Azure" loading="lazy" width="260" height="79"></li><li><img src="assets/img/tech-n8n.webp" alt="n8n" loading="lazy" width="260" height="70"></li><li><img src="assets/img/tech-power-bi.webp" alt="Power BI" loading="lazy" width="260" height="64"></li><li><img src="assets/img/tech-python.webp" alt="Python" loading="lazy" width="260" height="75"></li><li><img src="assets/img/tech-supabase.webp" alt="Supabase" loading="lazy" width="260" height="50"></li><li><img src="assets/img/tech-tableau.webp" alt="Tableau" loading="lazy" width="260" height="55"></li>
+      </ul>
+      <div class="tc" aria-label="Outras tecnologias"><span>Notion</span><span>SharePoint</span><span>RFID / NFC</span><span>QR Code</span><span>IoT</span></div>
+    </div>
+  </section>
+
+  <section class="ac" id="formacao">
+    <div class="w">
+      <img src="assets/img/formacao-equipa.webp" alt="Profissional da equipa Mentor a sorrir com os braços cruzados" loading="lazy" width="1100" height="619">
+      <div>
+        <h2>Pessoas preparadas para usar a tecnologia</h2>
+        <p class="lead">Formação prática em tecnologia, design e negócio. Escolha uma área para ver os detalhes do curso.</p>
+        <div class="tc" style="margin-top:22px;justify-content:flex-start" aria-label="Cursos disponíveis">
+          <span><a href="formacao.html#excel" style="color:inherit;text-decoration:none">Curso de Excel</a></span><span><a href="formacao.html#informatica-basica" style="color:inherit;text-decoration:none">Informática Básica</a></span><span><a href="formacao.html#web-design-figma" style="color:inherit;text-decoration:none">Web Design com Figma</a></span><span><a href="formacao.html#automacao-n8n" style="color:inherit;text-decoration:none">Automação com n8n</a></span><span><a href="formacao.html#programacao-web" style="color:inherit;text-decoration:none">Programação Web</a></span><span><a href="formacao.html#base-de-dados" style="color:inherit;text-decoration:none">Base de Dados</a></span><span><a href="formacao.html#marketing-comercial" style="color:inherit;text-decoration:none">Marketing Comercial</a></span><span><a href="formacao.html#design-grafico" style="color:inherit;text-decoration:none">Design Gráfico</a></span><span><a href="formacao.html#edicao-videos" style="color:inherit;text-decoration:none">Edição de Vídeos</a></span>
         </div>
-
-        <h3>Website para Pizzaria</h3>
-
-        <p class="case-summary">
-            Plataforma digital para apresentação de menu, pedidos online e reforço de presença de marca.
+        <p style="margin-top:28px;display:flex;gap:12px;flex-wrap:wrap">
+          <a class="btn p" href="formacao.html">Ver cursos</a>
+          <a class="btn g" href="#contacto" style="color:var(--fg);border-color:var(--line)">Pedir informações</a>
         </p>
-
-        <div class="case-footer">
-            <span>Inovação digital</span>
-        </div>
-
+      </div>
     </div>
+  </section>
 
-</div>
-<!-- CASE 5 -->
-<div class="case-card" data-category="web">
-
-    <div class="case-image">
-        <img src="assets/cases/7196876.jpg" alt="Website Gestão de Eventos">
+  <section class="fin" id="desafio">
+    <div class="w">
+      <h2>Tem um desafio? Vamos encontrar a solução.</h2>
+      <p>Fale com uma equipa que transforma desafios em soluções.</p>
+      <div class="bt">
+        <a class="btn" href="#contacto">Fale com a Mentor</a>
+        <a class="btn" href="#servicos">Conheça os serviços</a>
+      </div>
     </div>
+  </section>
 
-    <div class="case-content">
-
-        <div class="case-meta">
-            <span>Web</span>
-            <span>Eventos</span>
-        </div>
-
-        <h3>Website para Empresa de Gestão de Eventos</h3>
-
-        <p class="case-summary">
-            Site institucional com portfólio de eventos, contactos e apresentação de serviços.
-        </p>
-
-        <div class="case-footer">
-            <span>Gestão web</span>
-        </div>
-
+  <section class="ct" id="contacto">
+    <div class="w">
+      <div>
+        <h2>Como podemos ajudar?</h2>
+        <dl>
+          <div><dt>Morada</dt><dd>Luanda, Angola</dd></div>
+          <div><dt>Telefone</dt><dd><a href="tel:+244935675989">+244 935 675 989</a></dd></div>
+          <div><dt>WhatsApp</dt><dd><a href="https://wa.me/244935675989" target="_blank" rel="noopener noreferrer">+244 935 675 989</a></dd></div>
+          <div><dt>Email</dt><dd><a href="mailto:mentor.tech@mentorcompanhia.com">mentor.tech@mentorcompanhia.com</a></dd></div>
+          <div><dt>Horário</dt><dd>Seg a Sex, 08h00 às 17h00</dd></div>
+        </dl>
+      </div>
+      <form id="fm">
+        <label class="hp" aria-hidden="true">Não preencher<input name="website" tabindex="-1" autocomplete="off"></label>
+        <label>Nome<input name="n" required autocomplete="name"></label>
+        <label>Email<input name="e" type="email" required autocomplete="email"></label>
+        <label>Telefone<input name="t" type="tel" autocomplete="tel"></label>
+        <label>Empresa<input name="c" autocomplete="organization"></label>
+        <label class="f">Serviço de interesse
+          <select name="s" id="sv">
+            <option value="">Escolha um serviço</option>
+            <option>Consultoria Tecnológica</option><option>Desenvolvimento Web</option><option>Cibersegurança</option><option>Redes e Infraestrutura</option><option>Cloud Computing</option><option>Automação Empresarial</option><option>Inteligência Artificial</option><option>RFID e Gestão de Inventário</option>
+          </select>
+        </label>
+        <label class="f">Mensagem<textarea name="m" required></textarea></label>
+        <button class="btn p" type="submit">Enviar mensagem</button>
+        <p id="ok" role="status"></p>
+      </form>
     </div>
+  </section>
 
-</div>
-            <!-- CASE 2 -->
-            <div class="case-card" data-category="iot">
+</main>
 
-                <div class="case-image">
-                    <img src="assets/cases/NFC-Payment2-blog.jpg" alt="Case 2">
-                </div>
-
-                <div class="case-content">
-
-                    <div class="case-meta">
-                        <span>IoT</span>
-                        <span>NFC</span>
-                    </div>
-
-                    <h3>Sistema de Controlo de Acessos NFC</h3>
-
-                    <p class="case-summary">
-                        Implementação de controlo inteligente de presença e rastreamento de acessos.
-                    </p>
-
-                    <div class="case-footer">
-                        <span>Redução de erros manuais</span>
-                    </div>
-
-                </div>
-
-            </div>
-
-            <!-- CASE 6 -->
-<div class="case-card featured" data-category="automation">
-
-    <div class="case-image">
-        <img src="assets/cases/images.jpg" alt="Automação de Recrutamento com n8n">
+<footer>
+  <div class="w">
+    <div>
+      <div>
+        <img src="assets/img/logo-mentor.webp" alt="Mentor Company" width="140" height="34">
+        <p>Soluções tecnológicas inteligentes para transformar desafios empresariais em resultados sustentáveis.</p>
+      </div>
+      <div>
+        <h4>Navegação</h4>
+        <a href="#sobre">Sobre</a><a href="#servicos">Serviços</a><a href="#projetos">Projetos</a><a href="formacao.html">Formação</a>
+      </div>
+      <div>
+        <h4>Serviços</h4>
+        <a href="#servicos">Consultoria Tecnológica</a><a href="#servicos">Cibersegurança</a><a href="#servicos">Automação Empresarial</a><a href="#servicos">Inteligência Artificial</a>
+      </div>
+      <div>
+        <h4>Contactos</h4>
+        <a href="tel:+244935675989">+244 935 675 989</a>
+        <a href="https://wa.me/244935675989" target="_blank" rel="noopener noreferrer">WhatsApp</a>
+        <a href="mailto:mentor.tech@mentorcompanhia.com">mentor.tech@mentorcompanhia.com</a>
+        <a href="https://www.linkedin.com/company/mentor-companhia/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        <a href="https://www.instagram.com/mentor_companhia/" target="_blank" rel="noopener noreferrer">Instagram</a>
+      </div>
     </div>
-
-    <div class="case-content">
-
-        <div class="case-meta">
-            <span>Automação</span>
-            <span>Recursos Humanos</span>
-        </div>
-
-        <h3>Automação de Processos de Recrutamento com n8n</h3>
-
-        <p class="case-summary">
-            Fluxos automatizados de triagem, seleção e acompanhamento de candidatos, integrados de ponta a ponta.
-        </p>
-
-        <div class="case-footer">
-            <span>Dinamizar e automatizar</span>
-        </div>
-
-    </div>
-
-</div>
-
-
-            <!-- CASE 3 -->
-            <div class="case-card" data-category="data">
-
-                <div class="case-image">
-                    <img src="assets/cases/Capa---Artigo-de-Blog_-Analise-de-dados.jpg" alt="Case 3">
-                </div>
-
-                <div class="case-content">
-
-                    <div class="case-meta">
-                        <span>Data</span>
-                        <span>Dashboard</span>
-                    </div>
-
-                    <h3>Plataforma de Análise de Dados</h3>
-
-                    <p class="case-summary">
-                        Visualização estratégica de métricas operacionais em tempo real.
-                    </p>
-
-                    <div class="case-footer">
-                        <span>Decisão mais rápida</span>
-                    </div>
-
-                </div>
-
-            </div>
-<!-- CASE 6b -->
-<div class="case-card featured" data-category="automation ia">
-
-    <div class="case-image">
-        <img src="assets/cases/inteligencia-articial.jpg" alt="Controlo de Qualidade com IA">
-    </div>
-
-    <div class="case-content">
-
-        <div class="case-meta">
-            <span>IA</span>
-            <span>Indústria</span>
-        </div>
-
-        <h3>Controlo de Qualidade com Inteligência Artificial</h3>
-
-        <p class="case-summary">
-            Automação de processos de inspeção e deteção de não conformidades, com aplicação de IA para elevar os padrões de qualidade em ambiente produtivo.
-        </p>
-
-        <div class="case-footer">
-            <span>Dinamizar e acelerar processos para fluxos de qualidade</span>
-        </div>
-
-    </div>
-
-</div>
-
-<!-- CASE 7 -->
-<div class="case-card" data-category="data dashboard">
-
-    <div class="case-image">
-        <img src="assets/cases/78685249-3d-aumentar-grafico-com-azul-robo-dirigido-por-ia-crescimento-analise-o-negocio-inteligencia-automatizado-dados-analise-produtividade-aumentar-inteligente-previsao-.jpg" alt="Análise de Dados e Produtividade">
-    </div>
-
-    <div class="case-content">
-
-        <div class="case-meta">
-            <span>Data</span>
-            <span>Business Intelligence</span>
-        </div>
-
-        <h3>Análise de Dados para Produtividade e Crescimento</h3>
-
-        <p class="case-summary">
-            Modelagem e tratamento de dados aplicados ao cálculo de indicadores de produtividade, com dashboards de apoio à decisão estratégica.
-        </p>
-
-        <div class="case-footer">
-            <span>Análise real do crescimento da empresa</span>
-        </div>
-
-    </div>
-
-</div>
-
-<!-- CASE 8 -->
-<div class="case-card" data-category="3d">
-
-    <div class="case-image">
-        <img src="assets/cases/compressed-architect-engineer-pointing-architectural-building-prototype-analyzing-construction-model-computer-businessman-designer-working-remote-from-home-real-estate-proje.jpg" alt="Projeto CCTV para Estaleiro">
-    </div>
-
-    <div class="case-content">
-
-        <div class="case-meta">
-            <span>3D</span>
-            <span>Engenharia</span>
-        </div>
-
-        <h3>Projeto Técnico de Implementação de CCTV</h3>
-
-        <p class="case-summary">
-            Desenvolvimento de projeto técnico para sistema de videovigilância em estaleiro, com planeamento de cobertura, infraestrutura e integração de segurança.
-        </p>
-
-        <div class="case-footer">
-            <span>Segurança projetada à medida do terreno</span>
-        </div>
-
-    </div>
-
-</div>
-
-<!-- CASE 9 -->
-<div class="case-card" data-category="3d">
-
-    <div class="case-image">
-        <img src="assets/cases/Captura de ecrã 2026-07-18 213334.png" alt="Desenvolvimento de Equipamento Tecnológico">
-    </div>
-
-    <div class="case-content">
-
-        <div class="case-meta">
-            <span>3D</span>
-            <span>Engenharia</span>
-        </div>
-
-        <h3>Desenvolvimento de Equipamento Tecnológico Industrial</h3>
-
-        <p class="case-summary">
-            Conceção e projeto técnico de máquina industrial para empresas, desde a modelação 3D até à especificação funcional para produção.
-        </p>
-
-        <div class="case-footer">
-            <span>Engenharia aplicada à produção industrial</span>
-        </div>
-
-    </div>
-
-</div>
-
-<!-- CASE 10 -->
-<div class="case-card" data-category="iot">
-
-    <div class="case-image">
-        <img src="assets/cases/30dc5ac05723-IOT_404538009.jpg" alt="Sistema Inteligente para Escritórios">
-    </div>
-
-    <div class="case-content">
-
-        <div class="case-meta">
-            <span>IoT</span>
-            <span>Corporativo</span>
-        </div>
-
-        <h3>Sistemas Inteligentes para Escritórios</h3>
-
-        <p class="case-summary">
-            Integração de dispositivos IoT para automação de espaços de trabalho, modernizando iluminação, climatização e controlo de acessos com foco em eficiência corporativa.
-        </p>
-
-        <div class="case-footer">
-            <span>Escritórios preparados para o futuro</span>
-        </div>
-
-    </div>
-
-</div>
-
-        </div>
-
-    </div>
-
-</section>
-
-
-
-    <!-- ======================================================
-                MENTOR TECH KNOWLEDGE CENTER
-====================================================== -->
-
-    <!-- ==========================================
-     TECHNOLOGY SOLUTIONS SECTION
-========================================== -->
-
-<section class="tech-solutions">
-
-    <div class="container">
-
-        <div class="tech-content">
-
-
-            <!-- IMAGEM -->
-
-            <div class="tech-image">
-
-                <img 
-                src="assets/images/business-colleagues-watching-content-laptop.png"
-                alt="Soluções Tecnológicas Mentor Tech">
-
-            </div>
-
-
-
-            <!-- TEXTO -->
-
-            <div class="tech-text">
-
-                <span class="tech-label">
-                    SOLUÇÕES TECNOLÓGICAS
-                </span>
-
-
-                <h2>
-                    Transformamos tecnologia
-                    em resultados para o seu negócio.
-                </h2>
-
-
-                <p>
-
-                    Desenvolvemos soluções digitais
-                    utilizando tecnologias líderes do mercado
-                    para aumentar produtividade, segurança
-                    e eficiência operacional das empresas.
-
-                </p>
-
-                <ul class="tech-features">
-                    <li><i data-lucide="check-circle"></i> Infraestrutura cloud escalável</li>
-                    <li><i data-lucide="check-circle"></i> Automação de processos end-to-end</li>
-                    <li><i data-lucide="check-circle"></i> Segurança por padrão em cada projeto</li>
-                </ul>
-
-
-                <a href="contacto.html" class="tech-button">
-                    Comece um Projeto Conosco
-                </a>
-
-
-            </div>
-
-
-        </div>
-
-
-
-        <!-- TECNOLOGIAS -->
-
-<div class="technology-area">
-
-    <div class="technology-split">
-
-        <!-- LOGOS — agrupados e organizados, sem animação -->
-        <div class="technology-logos">
-            <div class="technology-item"><img src="assets/ferramentas/Figma-Logo.png" alt="Figma"></div>
-            <div class="technology-item"><img src="assets/ferramentas/images.png" alt="Ferramenta"></div>
-            <div class="technology-item"><img src="assets/ferramentas/Logo_Google_Analytics.svg.png" alt="Google Analytics"></div>
-            <div class="technology-item"><img src="assets/ferramentas/microsft.png" alt="Microsoft 365"></div>
-            <div class="technology-item"><img src="assets/ferramentas/png-transparent-n8n-logo-tech-companies.png" alt="n8n"></div>
-            <div class="technology-item"><img src="assets/ferramentas/Power-Bi-Logo-PNG-Pic.png" alt="Power BI"></div>
-            <div class="technology-item"><img src="assets/ferramentas/python-3-logo-png-transparent.png" alt="Python"></div>
-            <div class="technology-item"><img src="assets/ferramentas/Supabase_Logo.png" alt="Supabase"></div>
-            <div class="technology-item"><img src="assets/ferramentas/microsoft-azure-logo.png" alt="Microsoft Azure"></div>
-            <div class="technology-item"><img src="assets/ferramentas/HubSpot-Logo.png" alt="HubSpot"></div>
-            <div class="technology-item"><img src="assets/ferramentas/Tableau-Logo.png" alt="Tableau"></div>
-        </div>
-
-        <!-- TEXTO -->
-        <div class="technology-text-side">
-            <h3>Tecnologia que utilizamos</h3>
-            <p class="technology-caption">Ferramentas líderes de mercado, escolhidas para construir, automatizar e escalar soluções sólidas para o seu negócio.</p>
-        </div>
-
-    </div>
-
-</div>
-
-
-    </div>
-
-
-</section>
-
-
-<!-- ==========================================
-     FOOTER MENTOR TECH
-========================================== -->
-
-<section id="areas" class="areas areas--footer">
-
-    <!-- SLIDER FULL-BLEED (ocupa as pontas do ecrã) -->
-
-    <div class="areas-slider" id="areasSlider">
-
-        <div class="areas-slider-track" id="areasTrack">
-
-            <article class="area-slide" style="background-image:url('assets/images/business-colleagues-watching-content-laptop.png')">
-                <div class="area-slide-overlay"></div>
-                <div class="area-slide-content">
-                    <span class="area-slide-tag">CONSULTORIA</span>
-                    <h3>Consultoria Organizacional</h3>
-                    <p>Diagnóstico empresarial, transformação digital, otimização de processos e apoio estratégico.</p>
-                    <a href="area.html?id=consultoria" class="area-slide-link">Saber mais <i data-lucide="arrow-right"></i></a>
-                </div>
-            </article>
-
-            <article class="area-slide" style="background-image:url('assets/cases/Capa---Artigo-de-Blog_-Analise-de-dados.jpg')">
-                <div class="area-slide-overlay"></div>
-                <div class="area-slide-content">
-                    <span class="area-slide-tag">MARKETING</span>
-                    <h3>Marketing Digital</h3>
-                    <p>Estratégia de conteúdo, gestão de redes sociais, branding, campanhas digitais, SEO e performance.</p>
-                    <a href="area.html?id=marketing" class="area-slide-link">Saber mais <i data-lucide="arrow-right"></i></a>
-                </div>
-            </article>
-
-            <article class="area-slide" style="background-image:url('assets/cases/30dc5ac05723-IOT_404538009.jpg')">
-                <div class="area-slide-overlay"></div>
-                <div class="area-slide-content">
-                    <span class="area-slide-tag">IOT</span>
-                    <h3>Automação e Casas Inteligentes</h3>
-                    <p>Controlo inteligente de iluminação, tomadas, sensores de presença e integração de dispositivos IoT.</p>
-                    <a href="area.html?id=iot" class="area-slide-link">Saber mais <i data-lucide="arrow-right"></i></a>
-                </div>
-            </article>
-
-            <article class="area-slide" style="background-image:url('assets/cases/NFC-Payment2-blog.jpg')">
-                <div class="area-slide-overlay"></div>
-                <div class="area-slide-content">
-                    <span class="area-slide-tag">INVENTÁRIO</span>
-                    <h3>Gestão de Inventários</h3>
-                    <p>Contagem, inventariação, organização e gestão completa de stock, com execução de estratégias de inventário.</p>
-                    <a href="area.html?id=inventario" class="area-slide-link">Saber mais <i data-lucide="arrow-right"></i></a>
-                </div>
-            </article>
-
-            <article class="area-slide" style="background-image:url('assets/cases/6325219.jpg')">
-                <div class="area-slide-overlay"></div>
-                <div class="area-slide-content">
-                    <span class="area-slide-tag">WEB</span>
-                    <h3>Desenvolvimento Web</h3>
-                    <p>Websites corporativos, plataformas empresariais, portais, sistemas internos e soluções cloud.</p>
-                    <a href="area.html?id=web" class="area-slide-link">Saber mais <i data-lucide="arrow-right"></i></a>
-                </div>
-            </article>
-
-            <article class="area-slide" style="background-image:url('assets/cases/inteligencia-articial.jpg')">
-                <div class="area-slide-overlay"></div>
-                <div class="area-slide-content">
-                    <span class="area-slide-tag">IA</span>
-                    <h3>Inteligência Artificial</h3>
-                    <p>Automatização, machine learning, chatbots, análise de dados e integração com IA.</p>
-                    <a href="area.html?id=ia" class="area-slide-link">Saber mais <i data-lucide="arrow-right"></i></a>
-                </div>
-            </article>
-
-            <article class="area-slide" style="background-image:url('assets/cases/compressed-architect-engineer-pointing-architectural-building-prototype-analyzing-construction-model-computer-businessman-designer-working-remote-from-home-real-estate-proje.jpg')">
-                <div class="area-slide-overlay"></div>
-                <div class="area-slide-content">
-                    <span class="area-slide-tag">INFRAESTRUTURA</span>
-                    <h3>Redes & Sistemas</h3>
-                    <p>Configuração de redes, servidores, virtualização, cloud, Microsoft 365 e suporte empresarial.</p>
-                    <a href="area.html?id=infraestrutura" class="area-slide-link">Saber mais <i data-lucide="arrow-right"></i></a>
-                </div>
-            </article>
-
-            <article class="area-slide" style="background-image:url('assets/images/Gemini_Generated_Image_jtfz0wjtfz0wjtfz.png')">
-                <div class="area-slide-overlay"></div>
-                <div class="area-slide-content">
-                    <span class="area-slide-tag">HEALTH</span>
-                    <h3>Saúde Digital</h3>
-                    <p>Soluções para hospitais, clínicas, RFID, NFC, gestão inteligente e inovação tecnológica.</p>
-                    <a href="area.html?id=saude" class="area-slide-link">Saber mais <i data-lucide="arrow-right"></i></a>
-                </div>
-            </article>
-
-        </div>
-
-    </div>
-
-    <!-- NAVEGAÇÃO — por baixo do cartão -->
-
-    <div class="areas-nav container">
-
-        <button type="button" class="areas-nav-btn" id="areasPrev" aria-label="Área anterior">
-            <i data-lucide="arrow-left"></i> Anterior
-        </button>
-
-        <span class="areas-counter">
-            <span id="areasCurrent">01</span> / 08
-        </span>
-
-        <button type="button" class="areas-nav-btn" id="areasNext" aria-label="Próxima área">
-            Seguinte <i data-lucide="arrow-right"></i>
-        </button>
-
-    </div>
-
-</section>
-
-<footer class="footer">
-
-
-    <div class="container">
-
-
-        <div class="footer-grid">
-
-
-
-            <!-- EMPRESA -->
-
-            <div class="footer-brand">
-
-
-                <div class="footer-logo">
-
-                    <span>
-                        MENTOR
-                    </span>
-
-                    <strong>
-                        TECH
-                    </strong>
-
-                </div>
-
-
-
-                <p>
-
-                    Soluções tecnológicas inteligentes
-                    para transformar desafios empresariais
-                    em resultados sustentáveis.
-
-                </p>
-
-
-<div class="footer-social">
-
-    <a href="https://www.linkedin.com/company/mentor-companhia/?viewAsMember=true" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
-        <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18">
-            <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
-        </svg>
-    </a>
-
-    <a href="https://www.instagram.com/mentor_companhia/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
-        <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18">
-            <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
-        </svg>
-    </a>
-
-    <a href="https://www.facebook.com/A-TUA-PAGINA" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
-        <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18">
-            <path d="M22.675 0h-21.35c-.732 0-1.325.593-1.325 1.325v21.351c0 .731.593 1.324 1.325 1.324h11.495v-9.294h-3.128v-3.622h3.128v-2.671c0-3.1 1.893-4.788 4.659-4.788 1.325 0 2.463.099 2.795.143v3.24l-1.918.001c-1.504 0-1.795.715-1.795 1.763v2.313h3.587l-.467 3.622h-3.12v9.293h6.116c.73 0 1.323-.593 1.323-1.325v-21.35c0-.732-.593-1.325-1.325-1.325z"/>
-        </svg>
-    </a>
-
-    <a href="https://www.youtube.com/@O-TEU-CANAL" target="_blank" rel="noopener noreferrer" aria-label="YouTube">
-        <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18">
-            <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
-        </svg>
-    </a>
-
-</div>
-
-
-
-            </div>
-
-
-
-
-
-
-            <!-- SERVIÇOS -->
-
-            <div class="footer-column">
-
-
-                <h3>
-                    Serviços
-                </h3>
-
-
-                <ul>
-
-
-                    <li>
-                        <a href="#">
-                            Consultoria Tecnológica
-                        </a>
-                    </li>
-
-
-                    <li>
-                        <a href="#">
-                            Suporte Informático
-                        </a>
-                    </li>
-
-
-                    <li>
-                        <a href="#">
-                            Cibersegurança
-                        </a>
-                    </li>
-
-
-                    <li>
-                        <a href="#">
-                            Transformação Digital
-                        </a>
-                    </li>
-
-
-                    <li>
-                        <a href="#">
-                            Gestão de Projetos
-                        </a>
-                    </li>
-
-
-                </ul>
-
-
-            </div>
-
-
-
-
-
-
-
-            <!-- EMPRESA -->
-
-            <div class="footer-column">
-
-
-                <h3>
-                    Empresa
-                </h3>
-
-
-                <ul>
-
-
-                    <li>
-                        <a href="#">
-                            Sobre Nós
-                        </a>
-                    </li>
-
-
-                    <li>
-                        <a href="#">
-                            Projetos
-                        </a>
-                    </li>
-
-
-                    <li>
-                        <a href="#">
-                            Academia
-                        </a>
-                    </li>
-
-
-                    <li>
-                        <a href="#">
-                            Carreiras
-                        </a>
-                    </li>
-
-
-                    <li>
-                        <a href="#">
-                            Contacto
-                        </a>
-                    </li>
-
-
-                </ul>
-
-
-            </div>
-
-
-
-
-
-
-
-            <!-- CONTACTO -->
-
-            <div class="footer-column footer-contact">
-
-
-                <h3>
-                    Contactos
-                </h3>
-
-
-
-                <p>
-
-                    <i data-lucide="map-pin"></i>
-
-                    Luanda, Angola
-
-                </p>
-
-
-
-
-                <p>
-
-                    <i data-lucide="phone"></i>
-
-                    +244 935 675 989
-
-                </p>
-
-
-
-
-                <p>
-
-                    <i data-lucide="mail"></i>
-
-                    mentor.tech@mentorcompanhia.com
-
-                </p>
-
-
-
-
-            </div>
-
-
-
-        </div>
-
-
-
-
-
-
-
-        <!-- CTA -->
-
-        <div class="footer-cta">
-
-
-            <div>
-
-                <h2>
-                    Pronto para transformar a sua empresa?
-                </h2>
-
-
-                <p>
-                    Fale com a nossa equipa e descubra
-                    como podemos ajudar.
-                </p>
-
-
-            </div>
-
-
-
-            <a href="#">
-                Solicitar Consulta
-            </a>
-
-
-        </div>
-
-
-
-
-
-
-
-        <!-- BOTTOM -->
-
-
-        <div class="footer-bottom">
-
-
-            <p>
-
-                © 2026 Mentor Tech.
-                Todos os direitos reservados.
-
-            </p>
-
-
-
-            <div>
-
-
-                <a href="#">
-                    Política de Privacidade
-                </a>
-
-
-                <a href="#">
-                    Termos de Uso
-                </a>
-
-
-            </div>
-
-
-        </div>
-
-
-
-    </div>
-
-
+  </div>
+  <p class="w cp">© 2026 Mentor Tech. Todos os direitos reservados.</p>
 </footer>
 
-
-
-
-    <!-- ICONS -->
-    <script src="https://unpkg.com/lucide@latest"></script>
-    <script>lucide.createIcons();</script>
-
-    <!-- APP -->
-    <script src="js/header.js"></script>
-    <script src="js/pages/home.js"></script>
-
-<div class="menu-overlay"></div>
-
-
-
+<script src="js/main.js" defer></script>
+<script src="js/home.js" defer></script>
 </body>
 </html>
